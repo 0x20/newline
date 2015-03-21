@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Whitespace: Newline 2015</title>
+<meta charset="utf-8">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<style>
+body {
+    font-family:"Fira Mono",monospace;
+    background-color: #221e1d;
+}
+header, footer {
+    clear: both;
+    text-align: center;
+    color: lightgrey;
+}
+h2 {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    color: lightgrey;
+    margin: 0;
+}
+dl, p{
+    padding:0 5px;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin: 0 0 1em 0;
+}
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* delete me */
+.a {
+  background-color: white;
+}
+.b {
+  background-color: white;
+}
+.c {
+  background-color: white;
+}
+
+/*  GRID OF THREE           ============================================================================= */
+@media only screen and (min-width: 480px) {
+  .section {
+    width: 1000px;
+    margin: 0px auto;
+  }
+
+  .span_3_of_3 {
+    width: 100%;
+  }
+
+  .span_2_of_3 {
+    width: 66.1%;
+  }
+
+  .span_1_of_3 {
+    width: 32.2%;
+  }
+
+  /*  COLUMN SETUP  */
+  .col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+  }
+
+  .col:first-child {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .section {
+    width: 100%; /* fix for Firefox */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .a {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -webkit-flex-order: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+  }
+
+  .b {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -webkit-flex-order: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .c {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -webkit-flex-order: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
+
+
+
+</style>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+
+<script>
+
+
+$(function(){       
+
+    var id='131235427%40N07';
+    var limit ='20';
+
+    // Flickr Photostream feed link.
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
+
+    function(data){$.each(data.items, 
+
+    function(i,item){
+
+        // Number of thumbnails to show.            
+        if(i < limit){
+
+        // Create images and append to div id flickr and wrap link around the image.
+        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
+
+
+        }
+
+    }); 
+
+    }); 
+
+    });
+
+</script>
+<style type="text/css">
+#flickr{
+    width:300px;
+    overflow:hidden;
+    }
+#flickr a{
+    width:75px;
+    float:left;
+    margin:10px;
+    padding:0;
+    border:0;   
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+  <h1>Newline 2015</h1>
+</header>
+
+
+<section class="section group">
+
+
+    <article class="col span_1_of_3 a">
+        <h2>Pictures</h2>
+        <div id="flickr"></div>
+    </article>
+
+    <article class="col span_1_of_3 b">
+        <h2>About</h2>
+        <p><strong>Newline:</strong> the most obscure &amp; chaotic hacker conference in Belgium.
+Comedy, Talks, Workshops &amp; lots of beer.
+</p>
+        <dl>
+            <dt>Friday 3 April:</dt><dd>Comedy straight from London</dd>
+            <dt>Saturday 4 April:</dt><dd>Talks, Workshops &amp; lots of beer</dd>
+            <dt>Sunday 5 April:</dt><dd>Talks, Workshops &amp; lots of beer</dd>
+        </dl>
+        <h2>Contact</h2>
+        <p>email fb etc</p>
+    </article>
+
+    <article class="col span_1_of_3 c">
+        <h2>Program</h2>
+
+            <p><strong>Friday 20:00 - 24:00</strong><br />English language Comedy</p>
+            <ul>
+                <li>ELLIS &amp; ROSE, Britains's most chaotic double-act</li>
+                <li>Surreal character oddity KARL SCHULTZ</li>
+                <li>MILES LLOYD, easily distracted welshman</li>
+            </ul>
+
+
+            <p><strong>Saturday 14:00 - 24:00</strong></p>
+            <ul>
+                <li>Hacking the Ubuntu phone</li>
+                <li>My boyfriend forced me to use Ubuntu</li>
+                <li>Arduino: what &amp; how</li>
+                <li>On Pokebots and CTFs</li>
+                <li>JavaScript &#10084; Unicode</li>
+                <li>Lists: a secret love story</li>
+                <li>Tengu: Open-source big data platform made easy with juju</li>
+                <li>Webservices for open data, you've been doing it wrong</li>
+                <li>What I learned from 365 days of contributing to Open Source projects</li>
+                <li>Buildtime Trend : Visualise what's trending in your build process</li>
+                <li>building a usb-spudgun</li>
+                <li>Ham Radio</li>
+                <li>ConversationStarter</li>
+                <li>lightning talks</li>
+
+            </ul>
+
+            <p><strong>Sunday 14:00 - 20:00</strong></p>
+            <ul>
+                <li>LEGO Robotics workshop</li>
+                <li>SQL Injection: a quick howto</li>
+            </ul>
+
+
+
+
+
+
+        <h2>Location</h2>
+        <p>google map and info</p>
+    </article>
+
+</section>
+
+<footer>
+    <p>&copy; 2015 vzw Whitespace. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 
