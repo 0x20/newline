@@ -8,7 +8,9 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria-1.4.2.min.js"></script>
+<script src="galleria.flickr.min.js"></script>
 <style>
 body {
     font-family:"Fira Mono",monospace;
@@ -129,56 +131,6 @@ dd{
 
 
 </style>
-
-
-<script src="http://code.jquery.com/jquery-latest.js"></script> 
-
-<script>
-
-
-$(function(){       
-
-    var id='131235427%40N07';
-    var limit ='20';
-
-    // Flickr Photostream feed link.
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=" + id + "&lang=en-us&format=json&jsoncallback=?", 
-
-    function(data){$.each(data.items, 
-
-    function(i,item){
-
-        // Number of thumbnails to show.            
-        if(i < limit){
-
-        // Create images and append to div id flickr and wrap link around the image.
-        $("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo("#flickr").wrap("<a href='" + item.media.m.replace('_m', '_z') + "' name='"+ item.link + "' title='" +  item.title +"'></a>");
-
-
-        }
-
-    }); 
-
-    }); 
-
-    });
-
-</script>
-<style type="text/css">
-#flickr{
-    width:300px;
-    overflow:hidden;
-    }
-#flickr a{
-    width:75px;
-    float:left;
-    margin:10px;
-    padding:0;
-    border:0;   
-    }
-</style>
-
-
 </head>
 
 <body>
@@ -201,7 +153,7 @@ $(function(){
         </dl>
 
         <h2>Pictures</h2>
-        <div id="flickr"></div>
+        <div id="flickr" style="height:320px;"></div>
     </article>
 
 
@@ -259,6 +211,14 @@ $(function(){
 <footer>
     <p>&copy; 2015 vzw Whitespace. All rights reserved.</p>
 </footer>
-
+<script>
+Galleria.loadTheme('galleria.classic.min.js');
+Galleria.run('#flickr', {
+    flickr: 'user:131235427@N07',
+    flickrOptions: {
+        sort: 'interestingness-desc'
+    }
+});
+</script>
 </body>
 </html> 
