@@ -1,0 +1,543 @@
+
+
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Whitespace: Newline 2015</title>
+
+<meta charset="utf-8">
+
+<link rel="image_src" href="/newline_2016/newline_big.png" / >
+
+<meta property="og:image" content="http://hackerspace.gent/newline_2016/newline_big.png" />
+
+<meta property="og:description" content="The most chaotic and obscure hackers conference in Belgium. 18 - 19 - 20 March 2016 @0x20, hackerspace Ghent. Talks, Worshops and lots of beer. Also hacking.." />
+
+<meta property="og:title" content="NEWLINE 2016" />
+
+<meta property="og:url" content="http://hackerspace.gent/newline_2016/" />
+
+
+
+
+
+<!--[if lt IE 9]>
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+
+</script>
+
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script src="galleria-1.4.2.min.js"></script>
+
+<script src="galleria.flickr.min.js"></script>
+
+<style>
+
+body {
+
+    font-family:"Fira Mono",monospace;
+
+    background-color: #000000;
+
+    color: #d54e53;
+
+}
+
+header, footer {
+
+    clear: both;
+
+    text-align: center;
+
+    color: #4271ae;
+
+    text-transform: lowercase;
+
+}
+
+h2 {
+
+    color: #7aa6da;
+
+    padding: 0px;
+
+    margin: 0;
+
+    margin-top: 1em;
+
+    text-align: left;
+
+    font-size: 1em;
+
+    text-transform: lowercase;
+
+}
+
+dl, p{
+
+    padding:0 5px;
+
+}
+
+dt{
+
+    font-weight: bold;
+
+}
+
+dd{
+
+    margin: 0 0 1em 0;
+
+}
+
+.section {
+
+  clear: both;
+
+  padding: 0px;
+
+  margin: 0px;
+
+}
+
+
+
+@media only screen and (min-width: 480px) {
+
+  .section {
+
+    width: 1000px;
+
+    margin: 0px auto;
+
+  }
+
+  .span_3_of_3 {
+
+    width: 100%;
+
+  }
+
+  .span_2_of_3 {
+
+    width: 66.1%;
+
+  }
+
+  .span_1_of_3 {
+
+    width: 32.2%;
+
+  }
+
+  .col {
+
+    display: block;
+
+    float: left;
+
+    margin: 1% 0 1% 1.6%;
+
+  }
+
+  .col:first-child {
+
+    margin-left: 0;
+
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    #flickr{
+
+        display: none;
+
+    }
+
+  .section {
+
+    width: 100%; /* fix for Firefox */
+
+    display: -webkit-box;
+
+    display: -moz-box;
+
+    display: -webkit-flexbox;
+
+    display: -ms-flexbox;
+
+    display: -webkit-flex;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -moz-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+    -moz-box-direction: normal;
+
+    -webkit-flex-direction: column;
+
+    -ms-flex-direction: column;
+
+    flex-direction: column;
+
+  }
+
+
+
+  .a {
+
+    -webkit-box-ordinal-group: 2;
+
+    -moz-box-ordinal-group: 2;
+
+    -webkit-flex-order: 1;
+
+    -ms-flex-order: 1;
+
+    -webkit-order: 1;
+
+    order: 1;
+
+  }
+
+
+
+  .c {
+
+    -webkit-box-ordinal-group: 3;
+
+    -moz-box-ordinal-group: 3;
+
+    -webkit-flex-order: 2;
+
+    -ms-flex-order: 2;
+
+    -webkit-order: 2;
+
+    order: 2;
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+    .accent{
+
+        color: #e7c547;
+
+    }
+
+
+
+    a{
+
+        color: #e7c547;
+
+    }
+
+
+
+    .comment{
+
+        color: #eaeaea;
+
+    }
+
+
+
+    .comment:before{ 
+
+        content: "// ";
+
+        padding: 0;
+
+    }
+
+
+
+    div.acc {
+
+        padding-left: 1em;
+
+    }
+
+
+
+    div.acc::before, div.acc::after { 
+
+        content: "{";
+
+        color: grey;
+
+        padding: 0;
+
+        position:relative; left:-1em;
+
+    }
+
+
+
+    div.acc::after { 
+
+        content: "}";
+
+    }
+
+
+
+    ul li:before{
+
+        content:"$> ";
+
+        color: #81a2be;
+
+    }
+
+
+
+    ul {
+
+        list-style: none;
+
+        padding: 0;
+
+    }
+
+
+
+    li {
+
+        margin-bottom: 0.3em;
+
+    }
+
+
+
+    div.gallery {
+
+        padding-left: 0em;
+
+    }
+
+
+
+    .parameters{
+
+        color: #c397d8;
+
+    }
+
+
+
+    .parameters:before, .parameters:after{
+
+        color: #7aa6da; 
+
+        content: " ( ";
+
+        padding: 0;
+
+    }
+
+    .parameters:after{ 
+
+        content: " ) ";
+
+    }
+
+
+
+    .galleria-info-link{
+
+        display:none;
+
+    }
+
+</style>
+
+<link rel="icon" 
+
+ type="image/png" 
+
+ href="favicon.png" />
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+  <h1>newline</br> <span class="accent">0x20</span> \n </h1>
+
+</header>
+
+
+
+
+
+<section class="section group">
+
+
+
+    <article class="col span_1_of_3 a">
+
+        <h2>tl_dr()</h2>
+
+        <div class="acc">
+
+
+
+            <dl>
+
+                <dt><a href="#friday">Friday 18 March:</a></dt><dd>Socialising</dd>
+
+                <dt><a href="#saturday">Saturday 19 March:</a></dt><dd>Talks, Workshops &amp; lots of beer</dd>
+
+                <dt><a href="#sunday">Sunday 20 March:</a></dt><dd>Talks, Workshops &amp; lots of beer</dd>
+
+            </dl>
+
+
+
+            <p><span class="comment"><a href="https://hackerspace.gent/cfp">Add some info</a> to give a talk.</span></p>
+
+        </div>
+
+
+
+        <div id="flickr" style="height:320px;"></div>
+
+    </article>
+
+
+
+    <article class="col span_2_of_3 c">
+
+            <h2><a name="friday"></a>Friday <span class="parameters">20h00 - 24h00<span></h2>
+
+            <div class="acc">
+
+                <p class="comment">socialising</p>
+
+                <ul>
+
+                    <li>something more, to be announced</li>
+
+                </ul>
+
+                <p class="comment">+ Our year in review</p>
+
+            </div>
+
+
+
+            <h2><a name="saturday"></a>Saturday <span class="parameters">13:00 - 24:00<span></h2>
+
+            <div class="acc">
+
+                <ul>
+
+                    <li>talks and workshops. Schedule to be determined.</li>
+
+                    <li>lightning talks</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <h2><a name="sunday"></a>Sunday <span class="parameters">14:00 - 20:00<span></h2>
+
+            <div class="acc">
+
+                <ul>
+
+                    <li>talks and workshops. Schedule to be determined.</li>
+
+                    <li>lightning talks</li>
+
+                </ul>
+
+            </div>
+
+
+
+        <h2>Contact</h2>
+
+        <div class="acc">
+
+            <ul>
+
+                <li><a href="https://www.facebook.com/events/967249826702763/">fb event</a></li>
+
+                <li><a href="http://0x20.be/Whitespace">Blekerijstraat 75 Gent, room 1.21</a></li>
+
+            </ul>
+
+            <p><a href="https://www.google.com/maps/dir//Blekerijstraat+75,+9000+Gent,+Belgium/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=Blekerijstraat+75,+9000+Gent,+Belgium&amp;zoom=13&amp;scale=false&amp;size=302x201&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:X%7CBlekerijstraat+75,+9000+Gent,+Belgium" alt="Google Map of Blekerijstraat 75, 9000 Gent, Belgium"></a></p>
+
+        </div>
+
+    </article>
+
+
+
+</section>
+
+
+
+<footer>
+
+    <p>&copy; 2016 vzw Whitespace. Some rights reserved.</p>
+
+</footer>
+
+<script>
+
+Galleria.loadTheme('galleria.classic.min.js');
+
+Galleria.run('#flickr', {
+
+    flickr: 'set:72157651062912219',
+
+    flickrOptions: {
+
+        sort: 'interestingness-desc'
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html> 
+
+
