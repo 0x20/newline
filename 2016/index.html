@@ -48,30 +48,7 @@
             padding: 0px;
             margin: 0px;
         }
-        @media only screen and (min-width: 700px){
-            .section{
-                width: 1000px;
-                margin: 0px auto;
-            }
-            .span_3_of_3{
-                width: 100%;
-            }
-            .span_2_of_3{
-                width: 66.1%;
-            }
-            .span_1_of_3{
-                width: 32.2%;
-            }
-            .col{
-                display: block;
-                float: left;
-                margin: 1% 0 1% 1.6%;
-            }
-            .col:first-child{
-                margin-left: 0;
-            }
-        }
-        @media only screen and (max-width: 700px){
+        @media only screen and (orientation:portrait){
             .section{
                 width: 100%; /* fix for Firefox */
                 display: -webkit-box;
@@ -103,6 +80,29 @@
                 -ms-flex-order: 2;
                 -webkit-order: 2;
                 order: 2;
+            }
+        }
+        @media only screen and (orientation:landscape){
+            .section{
+                width: 1000px;
+                margin: 0px auto;
+            }
+            .span_3_of_3{
+                width: 100%;
+            }
+            .span_2_of_3{
+                width: 66.1%;
+            }
+            .span_1_of_3{
+                width: 32.2%;
+            }
+            .col{
+                display: block;
+                float: left;
+                margin: 1% 0 1% 1.6%;
+            }
+            .col:first-child{
+                margin-left: 0;
             }
         }
         .accent{
@@ -382,10 +382,10 @@
     <footer>
     <p>&copy; 2016 vzw Whitespace. Some rights reserved.</p>
 </footer>
-<script>
-for(var i = 0, l=document.links.length; i<l; i++) {
-  if(document.links[i].href.lastIndexOf("http", 0) === 0) document.links[i].target = "_blank";
-}
-</script
+--<script>
+--for(var i = 0, l=document.links.length; i<l; i++) {
+--  if(document.links[i].href.lastIndexOf("http", 0) === 0) document.links[i].target = "_blank";
+--}
+--</script
 </body>
 </html>
