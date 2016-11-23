@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whitespace: Newline 2016</title>
+    <meta charset="utf-8">
+    <link rel="image_src" href="newline_big.png" />
+    <meta property="og:image" content="http://hackerspace.gent/newline/2016/newline_big.png" />
+    <meta property="og:description" content="The most chaotic and obscure hackers conference in Belgium. 18 - 19 - 20 March 2016 @0x20, hackerspace Ghent. Talks, Worshops and lots of beer. Also hacking.." />
+    <meta property="og:title" content="NEWLINE 2016" />
+    <meta property="og:url" content="http://hackerspace.gent/newline/2016/" />
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <style>
+        body{
+            font-family: "Fira Mono" ,monospace;
+            background-color: #000000;
+            color: #d54e53;
+        }
+        header, footer{
+            clear: both;
+            text-align: center;
+            color: #4271ae;
+            text-transform: lowercase;
+        }
+        
+        h2{
+            color: #7aa6da;
+            padding: 0px;
+            margin: 0;
+            margin-top: 1em;
+            text-align: left;
+            font-size: 1.6em;
+            text-transform: lowercase;
+        }
+        dl, p{
+            padding: 0 5px;
+        }
+        dt{
+            font-weight: bold;
+	    margin: 1em 0 0 0;
+        }
+        dd {
+          margin: 0;
+        }
+        .section{
+            clear: both;
+            padding: 0px;
+            margin: 0px;
+        }
+        @media only screen and (orientation:portrait){
+            .section{
+                width: 100%; /* fix for Firefox */
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flexbox;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -moz-box-direction: normal;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .a{
+                -webkit-box-ordinal-group: 2;
+                -moz-box-ordinal-group: 2;
+                -webkit-flex-order: 1;
+                -ms-flex-order: 1;
+                -webkit-order: 1;
+                order: 1;
+            }
+            .c{
+                -webkit-box-ordinal-group: 3;
+                -moz-box-ordinal-group: 3;
+                -webkit-flex-order: 2;
+                -ms-flex-order: 2;
+                -webkit-order: 2;
+                order: 2;
+            }
+        }
+        @media only screen and (orientation:landscape){
+            .section{
+                width: 1000px;
+                margin: 0px auto;
+            }
+            .span_3_of_3{
+                width: 100%;
+            }
+            .span_2_of_3{
+                width: 66.1%;
+            }
+            .span_1_of_3{
+                width: 32.2%;
+            }
+            .col{
+                display: block;
+                float: left;
+                margin: 1% 0 1% 1.6%;
+            }
+            .col:first-child{
+                margin-left: 0;
+            }
+        }
+        .accent{
+            color: #e7c547;
+        }
+        a{
+            color: #e7c547;
+        }
+        .comment{
+            color: #eaeaea;
+        }
+        .comment:before{
+            content: "// ";
+            padding: 0;
+        }
+        div.acc{
+            padding-left: 1em;
+        }
+        div.acc::before, div.acc::after{
+            content: "{";
+            color: grey;
+            padding: 0;
+            position: relative;
+            left: -1em;
+        }
+        div.acc::after{
+            content: "}";
+        }
+        div.acc dd a {
+          color: #d54e53;
+          text-decoration: none;
+        }
+        ul li:before{
+            content: "$> ";
+            color: #81a2be;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            margin-bottom: 0.3em;
+        }
+        li span{
+            font-size: 0.9em;
+            color: #e7c547;
+            display: block;
+            padding-left: 2em;
+        }
+        div.gallery{
+            padding-left: 0em;
+        }
+        .parameters{
+            color: #c397d8;
+        }
+        .parameters:before, .parameters:after{
+            color: #7aa6da;
+            content: " ( ";
+            padding: 0;
+        }
+        .parameters:after{
+            content: " ) ";
+        }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+    <header>
+		<h1>newline</br> <span class="accent">0x20</span> \n </h1>
+	</header>
+    <section class="section group">
+		<article class="col span_1_of_3 a">
+			<h2>tl_dr()</h2>
+			<div class="acc">
+				<p>
+                                    <span class="comment"><a href="https://www.facebook.com/events/967249826702763/">Facebook Event</a></span><br/>
+                                    <span class="comment"><a href="#info">Practical</a></span>
+                                </p>
+				<dl>
+					<dt><a href="#friday">Friday 18 March:</a></dt>
+                                        <dd><a href="#comedy">Stand up comedy<a/></dd>
+					<dt><a href="#saturday">Saturday 19 March:</a></dt>
+					<dd><a href="#Lockpicking">Lockpicking</a></dd>
+					<dd><a href="#Origami">Origami</a></dd>
+					<dd><a href="#etching">PCB etching</a></dd>
+					<dd><a href="#Whitespace">Intro Whitespace</a></dd>
+					<dd><a href="#Musical">Connecting Musical Modules</a></dd>
+					<dd><a href="#Guru">Place.Guru</a></dd>
+					<dd><a href="#automation">Home/hackerspace automation</a></dd>
+					<dd><a href="#gsm">The 20 dollar gsm network</a></dd>
+					<dd><a href="#Maltego">The Magic of Maltego</a></dd>
+					<dd><a href="#badass">How to be a real badass adventurer!</a></dd>
+					<dd><a href="#malware">Malware</a></dd>
+					<dd><a href="#Timing">Web-based Timing Attacks</a></dd>
+					<dd><a href="#Wireless">Wireless Belgium</a></dd>
+					<dd><a href="#Predicting">Predicting the future (with data)</a></dd>
+					<dd><a href="#Lightning">Lightning Talks</a></dd>
+					
+					<dt><a href="#sunday">Sunday 20 March:</a></dt>
+					<dd><a href="#Robotics">LEGO Robotics</a></dd>
+					<dd><a href="#Brain">Brain in a jar</a></dd>
+					<dd><a href="#MBED">MBED microprocessor introduction workshop</a></dd>
+					<dd><a href="#space">The space: 2016-17</a></dd>
+				</dl>
+			</div>
+		</article>
+		<article class="col span_2_of_3 c">
+				<h2><a name="friday"></a>Friday <span class="parameters">20h00 - 24h00<span></h2>
+				<div class="acc">
+					<p class="comment"><a name="comedy"></a>Stand up comedy!</p>
+					<ul>
+						<li>Domien Vloeberghs</li>
+						<li>Edouard De Prez</li>
+						<li>Koen Rijsbrack</li>
+						<li>Gorik Verbeken</li>
+					</ul>
+					<p class="comment">MC: Els Vertongen</p>
+				</div>
+				<h2><a name="saturday"></a>Saturday <span class="parameters">13:00 - 02:00<span></h2>
+				<div class="acc">
+					<p class="comment"> Workshops: no skills required</p>
+					<ul>
+						<li> <a name="Lockpicking"></a><strong>14:00 - 15:00;</strong> Lockpicking
+							<span>The workshop starts off with a short introduction of lock types, general safety measures and the ways to bypass or pick a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!</span>
+						</li>
+						<li> <a name="origami"></a><strong>15:00 - 16:00;</strong> Hacking paper: origami
+							<span>We've all seen it, the way continuously folding paper can turn a boring piece of paper into a beautiful 3D piece of art, it's almost magic. Let me be the Hagrid who stomps down your door and announces you can be a wizard too! We will hone your transfiguration skills and turn paper into flapping birds, exploding enveloppes and even attacking cobra pets. After this workshop, you'll never look at a boring restaurant bill the same way.</span>
+						</li>
+						<li> <a name="etching"></a><strong>18:00 - 19:00;</strong> PCB etching
+							<span>Learn how to etch PCB's at home, on a limited budget and without fancy or expensive tools.</span>
+						</li>
+					</ul>
+</ul>
+					<p class="comment"> Workshop: basic Python skills required</p>
+					<ul>
+						<li> <a name="Predicting"></a><strong>16:00 - 19:00;</strong> Predicting the future.. (with data)
+							<span>A workshop on collecting data from the wild wild web, and getting data from it. We'll be playing with some open data data sets. Basic knowlegde of python is required.</span>
+						</li>
+					</ul>
+					<p class="comment">Presentations, Talks and Demos</p>
+					<ul>
+						<li> <a name="Whitespace"></a><strong>13:00 - 13:15;</strong> Intro: What are hackerspaces? What is Whitespace?
+							<span>
+								An introduction into the world of hackerspaces and more.
+							</span>
+						</li>
+						<li> <a name="Musical"></a><strong>13:30 - 14:30;</strong> Connecting Musical Modules
+							<span>
+								In this talk I will give a practical overview on how to connect hard- and software components for musical applications. Next to an overview there will be demos!  Do you want to make a musical instrument using a light sensor? Use your smartphone as an input device for a synth? Or are you simply interested in simple low-latency communication between devices? Come to this talk!
+								<br /><br />
+								More concretely the talk will feature the Axoloti audio board, Teensy micro-controller with audio board, MIDI and OSC protocols, Android MIDI features, some sensors, and hopefully you!
+							</span>
+						</li>
+						<li> <a name="Guru"></a><strong>14:45 - 15:15;</strong> Place.Guru
+							<span>
+								<a href="http://place.guru">Place.Guru</a> is a free web app that helps you to communicate better about places that matter to you. You want to be a great host ? put the relevant places on a map (drag & drop) and share it with whom you want, the way you want. On the other hand, in need of a bit of guidance, invite someone to be your guru.
+								<br />The presentation/demo is about the concept, the development process and our view on maps and last but not least, we love to hear your feedback.
+								<br /><br />Interested in #start-ups, new (and old) #technology, #maps, be our guest! 
+							</span>
+						</li>
+						<li> <a name="automation"></a><strong>15:30 - 16:00;</strong> Home/hackerspace automation
+							<span>
+								Make everything beep. Take control! Turn the lights on and off, saving energy by shutting everything down, ...
+							</span>
+						</li>
+						<li> <a name="gsm"></a><strong>16:15 - 17:15; </strong> The 20 dollar gsm network
+							<span>
+								This talk will explore how you can use a cheap cell phone to setup a gsm-network.
+								<br />We will use a cheap motorola cell phone and reprogram it to act as a cell phone tower coupled with some open source ( osmocom-bb+OpenBts) software running on our laptop. we can implement a Proof Off Concept gsm network wich allows us to send sms and with some further hacking would allow us to make a call between 2 phone's on the network.
+								<br />We made a VM wich make's this hole process allot easier.
+							</span>
+						</li>
+						<li> <a name="Maltego"></a><strong>17:30 - 18:00</strong> The Magic of Maltego
+							<span>
+								Maltego is a tool to work with graphs based on all kinds of online data. It allows you to create an overview of networks, mine social data, etc... It is a must-have tool in the field of open source intelligence.
+							</span>
+						</li>
+						<li> <a name="badass"></a><strong>20:00 - 20:30;</strong> How to be a real badass adventurer!
+							<span>Ever wanted to sail around the world?<br />
+								Walk to the north pole?<br />
+								Cycle from Mongolia to India?<br />
+								Walk to Santiago?<br />
+								Hitchhike to Berlin?<br />
+								Or just go outside to get some bread?<br />
+								<br />
+								Well I will try to prove that every single on of those adventures have a lot of things in common and I will give my opinion on how to tackle them!
+							</span>
+						</li>
+						<li> <a name="Malware"></a><strong>20:45 - 21:15;</strong> A talk about malware
+							<span>
+								Some interesting things I've found while playing with barcodes.
+							</span>
+						</li>
+						<li> <a name="Timing"></a><strong>21:30 - 22:00;</strong> The Timing Attacks They Are a-Changin’
+							<span>
+								Web-based timing attacks have been known for over a decade. It has been shown that, under optimal network conditions, an adversary can use such an attack to obtain information on the state of a user in a cross-origin website. In recent years, desktop computers have given way to laptops and mobile devices, which are mostly connected over a wireless or mobile network. These connections often do not meet the optimal required conditions to reliably perform cross-site timing attacks.
+								<br />I will elaborate on our recent research efforts on browser-based side-channel attacks. We discovered that various browser features can be abused by attackers. These "side-channel leaks" allow an adversary to uncover the size of cross-origin resources. I will demonstrate how malicious advertisers can - in just a few lines of JavaScript - leverage these novel attacks to uncover personal details of unknowing victims. Finally, I will discuss what we, as end users or website developers, can do to thwart these attacks.
+							</span>
+						</li>
+						<li> <a name="Wireless"></a><strong>22:15 - 23:15;</strong> Wireless Belgium
+							<span>
+								An introduction about Community based WAN (ISP) and LoRaWAN technology.
+							</span>
+						</li>
+						<li> <a name="Lightning"></a><strong>23:30 - ...;</strong> Lightning Talks
+							<span>
+								The stage is open to anyone with something interesting to present/show or talk about.
+								<br />Usually multiple people have something ranging from 5 to 15 minutes.
+							</span>
+						</li>
+				</div>
+				
+				<h2><a name="sunday"></a>Sunday <span class="parameters">13:00 - 20:00<span></h2>
+
+				<div class="acc">
+					<p class="comment">Workshops: no skills required</p>
+					<ul>
+						<li> <a name="LEGO"></a><strong>13:00 - 14:00;</strong> LEGO Robotics
+							<span>Want to build and control a Robot? In this workshop you learn how to program your LEGO robot!</span>
+						</li>
+						<li> <a name="Brain"></a><strong>15:30 - 16:30;</strong> Brain in a jar
+							<span>This is a workshop where you will learn how to conserve brains, organs or even animals into jars!</span>
+						</li>
+					</ul>
+					<p class="comment">Workshops: some skills required</p>
+					<ul>
+						<li> <a name="MBED"></a><strong>14:00 - 17:00;</strong> The MBED microprocessor controlling an RC servo: introduction workshop
+							<span>This workshop gives an introduction to the MBED-processor concept and the associated internet based devellopment environment.After some introduction to the programming interface, by using the onboard LEDs, a RC servo motor controller is programmed and if still some time left, we go deeper into the communication between the EMBED program and the PC.For this workshop every attendant should have a portable computer with at least 1 free USB 2.0 connector and a working Java-enabled browser (no IE).</span>
+						</li>
+					</ul>
+					<p class="comment">Presentations, Talks and Demos</p>
+					<ul>
+						
+						<li> <a name="space"></a><strong>17:00 - 18:00;</strong> The space: 2016-17
+							<span>An Intereactive talk about the coming year. What do we want to do, what are the challenges? what should we continue do. To goal is create an action plan by the end over the talk. </span>
+						</li>
+					</ul>
+				</div>
+
+
+
+			<h2><a name="info"></a>FAQ</h2>
+
+			<div class="acc">
+
+				<ul>
+					<li>Price?
+						<span>Free!<br />(you do have to pay for the drinks at the bar but that's how we pay our rent)</span>
+					</li>
+					
+					<li>Can I bring my own food?
+						<span>Yes, but we also provide snacks and warm meals (meat/vegetarian)</span>
+					</li>
+					
+					<li>Where can I sleep?
+						<span>Send us a mail at info@0x20.be and we'll tell you about some options (free/cheap/...)</span>
+					</li>
+					
+					
+					<li>Where is Newline and how do I get there?
+						<span><a href="http://0x20.be/Whitespace">Blekerijstraat 75 Gent, room 1.21</a>
+						<br />Multiple busses and trams at walking distance.
+						<br />10 minutes walking from Ghent Dampoort train station.
+						<br />Parking: in the streets nearby, free after 19h and on Sundays.
+						<br />Look for the signs once you're at number 75.
+						</span>
+					</li>
+				</ul>
+				<p><a href="https://www.google.com/maps/dir//Blekerijstraat+75,+9000+Gent,+Belgium/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=Blekerijstraat+75,+9000+Gent,+Belgium&amp;zoom=13&amp;scale=false&amp;size=302x201&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:X%7CBlekerijstraat+75,+9000+Gent,+Belgium" alt="Google Map of Blekerijstraat 75, 9000 Gent, Belgium"></a></p>
+			</div>
+		</article>
+	</section>
+    <footer>
+    <p>&copy; 2016 vzw Whitespace. Some rights reserved.</p>
+</footer>
+--<script>
+--for(var i = 0, l=document.links.length; i<l; i++) {
+--  if(document.links[i].href.lastIndexOf("http", 0) === 0) document.links[i].target = "_blank";
+--}
+--</script
+</body>
+</html>
