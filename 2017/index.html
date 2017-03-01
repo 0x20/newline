@@ -139,6 +139,9 @@
             content: "$> ";
             color: #81a2be;
         }
+	li li:before{
+            content: "";
+        }
         ul{
             list-style: none;
             padding: 0;
@@ -188,6 +191,14 @@
                                         <dd><a href="#arcade">Retro games, arcade and music night</a></dd>
 					<dt><a href="#saturday">Saturday 8 April:</a></dt>
 					<dd><a href="#Lockpicking">Lockpicking</a></dd>
+					
+					<dd><a href="#esp32">ESP32 introduction workshop</a></dd>
+					<dd><a href="#foodhacking">Foodhacking</a></dd>
+					<dd><a href="#API">Oops, I broke my API</a></dd>
+					<dd><a href="#PlaceGuru">Place.Guru</a></dd>
+					<dd><a href="#Bitcoin">Bitcoin: technical view</a></dd>
+					<dd><a href="#Arduino">Arduino as input device</a></dd>
+					
 					<dd><a href="#Tbd1">To be determined</a></dd>
 					<dd><a href="#Lightning">Lightning Talks</a></dd>
 					
@@ -221,13 +232,14 @@
 						</li>
 						<li> <a name="API"></a>Oops, I broke my API
 							<span>Breaking an API is a pain for many users, so you’d better have good arguments when you decide to do so. In this talk, we'll weigh different arguments against and in favor of API changes.
-
-<br />1. Which arguments are valid and which arguments should be rejected?
-<br />2. Should developers go for the short pain when they face a situation where an API change is necessary to solve a problem, or should they postpone the API change by introducing workarounds?
-<br />3. How can you avoid that users migrate to another product instead of to the newer version of your own product?
-<br />4. Which strategies can be used to introduce a new API?
-<br />
-This thought-provoking talk is aimed at developers of SDKs and software libraries.</span>
+								<ul>
+									<li>1. Which arguments are valid and which arguments should be rejected?</li>
+									<li>2. Should developers go for the short pain when they face a situation where an API change is necessary to solve a problem, 
+										or should they postpone the API change by introducing workarounds?</li>
+									<li>3. How can you avoid that users migrate to another product instead of to the newer version of your own product?</li>
+									<li>4. Which strategies can be used to introduce a new API?</li>
+								</ul>
+								This thought-provoking talk is aimed at developers of SDKs and software libraries.</span>
 						</li>
 						<li> <a name="PlaceGuru"></a>Place.Guru
 							<span>Place.Guru is a free to use progressive web app to communicate places. (maybe the best on the web) The app permits you to create and share (a list of) places in a jiffy. Since neutrallity rules, the user defines the purpose.
