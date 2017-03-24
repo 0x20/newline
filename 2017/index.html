@@ -410,7 +410,9 @@ After the talk you should know how bitcoins are created, how transactions are ma
 </footer>
 <script>
 for(var i = 0, l=document.links.length; i<l; i++) {
-  if(document.links[i].href.lastIndexOf("http", 0) === 0) document.links[i].target = "_blank";
+  if(document.links[i].href.lastIndexOf("http", 0) === 0 && document.links[i].href.split("#")[0] != window.location.href.split("#")[0]){
+	  document.links[i].target = "_blank";
+  }
 }
 </script
 </body>
