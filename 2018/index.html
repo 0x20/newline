@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whitespace: Newline 2017</title>
+    <meta charset="utf-8">
+    <link rel="image_src" href="newline_big.png" />
+    <meta property="og:image" content="https://hackerspace.gent/newline/2017/newline_big.png" />
+    <meta property="og:description" content="The most chaotic and obscure hackers conference in Belgium. 7 - 8 - 9 April 2017 @0x20, hackerspace Ghent. Talks, Worshops and lots of beer. Also hacking.." />
+    <meta property="og:title" content="NEWLINE 2017" />
+    <meta property="og:url" content="https://hackerspace.gent/newline/2017/" />
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <style>
+        body{
+            font-family: "Fira Mono" ,monospace;
+            background-color: #000000;
+            color: #d54e53;
+        }
+        header, footer{
+            clear: both;
+            text-align: center;
+            color: #4271ae;
+            text-transform: lowercase;
+        }
+        
+        h2{
+            color: #7aa6da;
+            padding: 0px;
+            margin: 0;
+            margin-top: 1em;
+            text-align: left;
+            font-size: 1.6em;
+            text-transform: lowercase;
+        }
+        dl, p{
+            padding: 0 5px;
+        }
+        dt{
+            font-weight: bold;
+	    margin: 1em 0 0 0;
+        }
+        dd {
+          margin: 0;
+        }
+        .section{
+            clear: both;
+            padding: 0px;
+            margin: 0px;
+        }
+        @media only screen and (orientation:portrait){
+            .section{
+                width: 100%; /* fix for Firefox */
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flexbox;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -moz-box-direction: normal;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .a{
+                -webkit-box-ordinal-group: 2;
+                -moz-box-ordinal-group: 2;
+                -webkit-flex-order: 1;
+                -ms-flex-order: 1;
+                -webkit-order: 1;
+                order: 1;
+            }
+            .c{
+                -webkit-box-ordinal-group: 3;
+                -moz-box-ordinal-group: 3;
+                -webkit-flex-order: 2;
+                -ms-flex-order: 2;
+                -webkit-order: 2;
+                order: 2;
+            }
+        }
+        @media only screen and (orientation:landscape){
+            .section{
+                width: 1000px;
+                margin: 0px auto;
+            }
+            .span_3_of_3{
+                width: 100%;
+            }
+            .span_2_of_3{
+                width: 66.1%;
+            }
+            .span_1_of_3{
+                width: 32.2%;
+            }
+            .col{
+                display: block;
+                float: left;
+                margin: 1% 0 1% 1.6%;
+            }
+            .col:first-child{
+                margin-left: 0;
+            }
+        }
+        .accent{
+            color: #e7c547;
+        }
+        a{
+            color: #e7c547;
+        }
+        .comment{
+            color: #eaeaea;
+        }
+        .comment:before{
+            content: "// ";
+            padding: 0;
+        }
+        div.acc{
+            padding-left: 1em;
+        }
+        div.acc::before, div.acc::after{
+            content: "{";
+            color: grey;
+            padding: 0;
+            position: relative;
+            left: -1em;
+        }
+        div.acc::after{
+            content: "}";
+        }
+        div.acc dd a {
+          color: #d54e53;
+          text-decoration: none;
+        }
+        ul li:before{
+            content: "$> ";
+            color: #81a2be;
+        }
+	li li:before{
+            content: "";
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            margin-bottom: 0.3em;
+        }
+        li span{
+            font-size: 0.9em;
+            color: #e7c547;
+            display: block;
+            padding-left: 2em;
+        }
+        div.gallery{
+            padding-left: 0em;
+        }
+        .parameters{
+            color: #c397d8;
+        }
+        .parameters:before, .parameters:after{
+            color: #7aa6da;
+            content: " ( ";
+            padding: 0;
+        }
+        .parameters:after{
+            content: " ) ";
+        }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+    <header>
+		<h1>newline<br/> <span class="accent">0x20</span> \n </h1>
+	</header>
+    <section class="section group">
+		<article class="col span_1_of_3 a">
+			<h2>tl_dr()</h2>
+			<div class="acc">
+				<p>
+                                    <span class="comment"><a href="https://www.facebook.com/events/1296449980413362">Facebook Event</a></span><br/>
+                                    <span class="comment"><a href="https://goo.gl/forms/KUCNQ9UzHlHzn4PR2">Add a talk / workshop</a></span><br/>
+				    <span class="comment"><a href="#info">Practical</a></span>
+					
+                                </p>
+				<dl>
+					<dt><a href="#friday">Friday 7 April:</a></dt>
+                                        <dd><a href="#arcade">Retro games, arcade and music night</a></dd>
+					
+					<dt><a href="#saturday">Saturday 8 April:</a></dt>
+					<dd><a href="#Welcome">Welcome</a></dd>
+					<dd><a href="#hacker2pentester">Hacker 2 pentester in 1Y</a></dd>
+					<dd><a href="#PlaceGuru">Place.Guru</a></dd>
+					<dd><a href="#HEIST">HTTP Encrypted Information Stolen through TCP-Windows</a></dd>
+					<dd><a href="#API">Oops, I broke my API</a></dd>
+					<dd><a href="#KABOOM">Keep talking and nobody explodes </a></dd>
+					<dd><a href="#IntelSGX">Introduction to Intel SGX</a></dd>
+					<dd><a href="#Wireless">Wireless Belgium</a></dd>
+					<dd><a href="#Lightning">Lightning Talks</a></dd>
+					<dd><a href="#Lockpicking">Lockpicking</a></dd>
+					<dd><a href="#esp32">ESP32 introduction workshop</a></dd>
+					<dd><a href="#Soldering">Soldering</a></dd>
+					
+					<dt><a href="#sunday">Sunday 9 April:</a></dt>
+					<dd><a href="#Arduino">Arduino as input device</a></dd>
+					<dd><a href="#foodhacking">Foodhacking</a></dd>
+					<dd><a href="#Bitcoin">Bitcoin: technical view</a></dd>
+					<dd><a href="#OSsuckysucky">Open Source sucks!</a></dd>
+					<dd><a href="#SecurityTalk">Security Talk</a></dd>
+					<dd><a href="#GIT">Using Git, or "don't fear the Merge"</a></dd>
+					<dd><a href="#DataArtNomNom">Art through destruction of Data</a></dd>
+					<dd><a href="#Robotics">LEGO Robotics</a></dd>
+				</dl>
+			</div>
+		</article>
+		<article class="col span_2_of_3 c">
+				<h2><a name="friday"></a>Friday <span class="parameters">18h00 - 03h00</span></h2>
+				<div class="acc">
+					<ul>
+						<li> <a name="arcade"></a>Retro games, arcade and music night
+							<span>We'll set up some old consoles, arcades and much more!</span>
+						</li>
+					</ul>
+				</div>
+				<h2><a name="saturday"></a>Saturday <span class="parameters">13:45 - 02:00</span></h2>
+				<div class="acc">
+					
+					<p class="comment">Talks &amp; Presentations</p>
+					<ul>
+						<li> <a name="Welcome"></a><strong>13:45 - 14:00; </strong>Welcome!
+							<span>An introduction of the Hackerspace and Newline!</span>
+						</li>
+						<li> <a name="PlaceGuru"></a><strong>14:45 - 15:15; </strong>Place.Guru
+							<span>
+								Place.Guru is a free to use progressive web app to communicate places. (maybe the best on the web) The app permits you to create and share (a list of) places in a jiffy. Since neutrality rules, the user defines the purpose.
+								March 2016 we demonstrated the beta version of the app. Today we show the progress, we share our story, and explore with you the future of place.guru!</span>
+						</li>
+						<li> <a name="HEIST"></a><strong>15:45 - 16:45; </strong>HEIST: HTTP Encrypted Information Can be Stolen through TCP-Windows
+							<span>
+								Over the last few years, a worryingly number of attacks against SSL/TLS and other secure channels have been discovered. 
+								Fortunately, at least from a defenders perspective, these attacks require an adversary capable of observing or manipulating network traffic. 
+								This prevented a wide and easy exploitation of these vulnerabilities. 
+								In contrast, we introduce HEIST, a set of techniques that allows us to carry out attacks against SSL/TLS purely in the browser. 
+								More generally, and surprisingly, with HEIST it becomes possible to exploit certain flaws in network protocols without having to sniff actual traffic. 
+								HEIST abuses weaknesses and subtleties in the browser, and the underlying HTTP, SSL/TLS, and TCP layers. 
+				HEIST: HTTP Encrypted Information Can be Stolen through TCP-Windows				Most importantly, we discover a side-channel attack that leaks the exact size of any cross-origin response. 
+								This side-channel abuses the way responses are sent at the TCP level. 
+								Combined with the fact that SSL/TLS lacks length-hiding capabilities, HEIST can directly infer the length of the plaintext message. 
+								Concretely, this means that compression-based attacks such as CRIME and BREACH can now be performed purely in the browser, by any malicious website or script, without requiring network access. 
+								Moreover, we also show that our length-exposing attacks can be used to obtain sensitive information from unwitting victims by abusing services on popular websites. 
+								Finally, we explore the reach and feasibility of exploiting HEIST. We show that attacks can be performed on virtually every web service, even when HTTP/2 is used. 
+								In fact, HTTP/2 allows for more damaging attack techniques, further increasing the impact of HEIST. 
+								In short, HEIST is a set of novel attack techniques that brings network-level attacks to the browser, posing an imminent threat to our online security and privacy.
+								
+							</span>
+						</li>
+						<li> <a name="API"></a><strong>17:15 - 18:15; </strong>Oops, I broke my API
+							<span>Breaking an API is a pain for many users, so you’d better have good arguments when you decide to do so. In this talk, we'll weigh different arguments against and in favor of API changes.
+								<ul>
+									<li>1. Which arguments are valid and which arguments should be rejected?</li>
+									<li>2. Should developers go for the short pain when they face a situation where an API change is necessary to solve a problem, 
+										or should they postpone the API change by introducing workarounds?</li>
+									<li>3. How can you avoid that users migrate to another product instead of to the newer version of your own product?</li>
+									<li>4. Which strategies can be used to introduce a new API?</li>
+								</ul>
+								This thought-provoking talk is aimed at developers of SDKs and software libraries.</span>
+						</li>
+						<li> <a name="KABOOM"></a><strong>19:15 - 19:45; </strong>Keep talking and nobody explodes contest!
+						</li>
+						<li> <a name="IntelSGX"></a><strong>19:45 - 20:15; </strong>Introduction to Intel SGX
+							<span>
+								Intel Software Guard Extensions is an Intel technology for application developers who are seeking to protect select code and data from disclosure or modification. Intel SGX makes such protections possible through the use of enclaves, which are protected areas of execution. Application code can be put into an enclave by special instructions and software.
+							</span>
+						</li>
+						<li> <a name="Wireless"></a><strong>20:45 - 21:45; </strong>Wireless Belgium
+							<span>
+								An introduction about Community based WAN (ISP) and LoRaWAN technology.
+							</span>
+						</li>
+						<li> <a name="Lightning"></a><strong>22:15 - 02:00; </strong>Lightning Talks
+							<span>
+								Anyone has the chance to present a 5 or 10 minut talk.
+								<br />
+								Just show up if you have something interesting/entertaining.
+							</span>
+						</li>
+						
+						
+					</ul>
+					<p class="comment"> Workshops</p>
+					<ul>
+						<li> <a name="Lockpicking"></a><strong>13:45 - 14:45; </strong>Lockpicking
+							<span>The workshop starts off with a short introduction of picking a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!</span>
+						</li>
+						<li> <a name="esp32"></a><strong>15:30 - 17:30; </strong>ESP32 introduction workshop
+							<span>The ESP32 is a micro-controller with a WiFi transmitter. During this hands-on workshop the capabilities of the device will be explained and explored. The aim is to first get the Arduino-based development environment running. Subsequently, we will build a TCP client that sends data over WiFi. Next we will try to recieve messages and finally a mesh-nework of ESP32's will be constructed.
+							The workshop will feature the Sparkfun ESP32 Thing, which features a charging circuit. The devices will be up for sale. Please fill out <a href="https://goo.gl/forms/MCA98D1zCM2IizPI3">this form</a> to express your interest.</span>
+						</li>
+						<li> <a name="Soldering"></a><strong>18:00 - 19:00; </strong>Soldering
+							<span>New to soldering, or starting out and looking for some advice? Experienced but feeling like some practice? Everyone's welcome for this workshop where we'll go over the basics quickly before giving everybody a chance to build a kit or maybe have a go at some prototyping or surface mount techniques. No knowledge required. All materials are provided and free.</span>
+						</li>
+					
+					
+					</ul>
+				</div>
+				
+				<h2><a name="sunday"></a>Sunday <span class="parameters">13:00 - 20:00</span></h2>
+
+				<div class="acc">
+					<p class="comment">Talks &amp; Presentations</p>
+					<ul>
+						<li> <a name="Arduino"></a><strong>13:30 - 13:45; </strong>Arduino as input device
+							<span>Certain Arduino devices (like Leonardo and Due) have native USB support, and they can be used to emulate any USB device. This will show you how to implement input devices like keyboards, mice, joysticks and MIDI devices.</span>
+						</li>	
+						<li> <a name="foodhacking"></a><strong>14:15 - 15:15; </strong>foodhacking; hacking the Belgian food traditions: go veggie!
+							<span>You care for our planet but you also love traditional (Belgian) dishes? Don't worry! In this demo I let you taste the most common vegetarian replacement foods and show you the use in different dishes. Bring your laptop/notebook if you want to take notes.</span>
+						</li>
+						<li> <a name="Bitcoin"></a><strong>15:45 - 16:45; </strong>How Bitcoin works - a technical view
+							<span>This talk aims to explain Bitcoin from a technical/IT viewpoint. 
+Expect bits, bytes and a bit of crypto; analogies will be shunned.
+After the talk you should know how bitcoins are created, how transactions are made and how the scripting language in Bitcoin works.</span>
+						</li>
+						
+						<li> <a name="Dusty"></a><strong>16:55 - 17:45; </strong>Dustproof, measuring pollution caused by fine dust.
+							<span>
+								Using Arduino and ESP based hardware to measure the pollution caused by fine dust in your neighborhood. Using crowd based sensor data to influence policy makers.
+								<br /><a href="https://dustproof.be/">https://dustproof.be/</a>
+							</span>
+						</li>
+						<li> <a name="OSsuckysucky"></a><strong>17:55 - 18:25; </strong>Open Source sucks!
+							<span>
+								Open Source suck balls, so why TF is almost every company doing it?
+							</span>
+						</li>
+						<li> <a name="SecurityTalk"></a><strong>18:45 - 19:45; </strong>Security Talk
+							<span>An interesting person presenting some interesting facts.</span>
+						</li>
+					</ul>
+					<p class="comment">Workshops</p>
+					<ul>
+						<li> <a name="Git"></a><strong>14:00 - 16:00; </strong>Using Git, or "don't fear the Merge"
+							<span>All developers have heard of Git. Many have seen it. Some have used it. A few actually understand it.
+							<br /><br />
+							This workshop is for us mortals: what is Git? How do you use it? <br />
+							Join this workshop for examples, discussions and more on Git!</span>
+						</li>
+						<li> <a name="DataArtNomNom"></a><strong>16:30 - 19:30; </strong>Art through destruction of Data
+							<span>
+								An introduction to the art form known as glitch art, that will go over a few of the basic techniques used to create it. 
+								<br />
+								"Glitch art is the practice of using digital or analog errors for aesthetic purposes by either corrupting digital data or physically manipulating electronic devices."
+								<br />
+								In this workshop you will learn: 
+								<br />
+								Hexediting: Breaking files through maually going into the data and editing it.
+								<br />
+								Sonification: Ever wanted to hear how a jpg sound and see what it looks like when a reverb or delay is put on it? 
+								<br />
+								Processing: Emulation the real glitches by accesing the pixel data with the processing framework. 
+								<br />
+								Datamoshing: Breaking video files through manipulation of i-frames and p-frames
+								<br />
+								And probably some other techniques, who knows.
+							</span>
+						</li>
+						<li> <a name="LEGO"></a><strong>20:00 - 21:00; </strong>LEGO Robotics
+							<span>Want to build and control a Robot? In this workshop you learn how to program your LEGO robot!</span>
+						</li>
+					</ul>
+				</div>
+
+
+
+			<h2><a name="info"></a>FAQ</h2>
+
+			<div class="acc">
+
+				<ul>
+					<li>Price?
+						<span>Free!<br />(you do have to pay for the drinks at the bar but that's how we pay our rent)</span>
+					</li>
+					
+					<li>Can I bring my own food?
+						<span>Yes, but we also provide snacks and warm meals (meat/vegetarian)</span>
+					</li>
+					
+					<li>Where can I sleep?
+						<span>Send us a mail at info@0x20.be and we'll tell you about some options (free/cheap/...)</span>
+					</li>
+					
+					
+					<li>Where is Newline and how do I get there?
+						<span><a href="https://hackerspace.gent/wiki/index.php/Contact">Blekerijstraat 75 Gent, room 1.21</a>
+						<br />Multiple busses and trams at walking distance.
+						<br />10 minutes walking from Ghent Dampoort train station.
+						<br />Parking: in the streets nearby, free after 19h and on Sundays.
+						<br />Look for the signs once you're at number 75.
+						</span>
+					</li>
+				</ul>
+				<p><a href="https://www.google.com/maps/dir//Blekerijstraat+75,+9000+Gent,+Belgium/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=Blekerijstraat+75,+9000+Gent,+Belgium&amp;zoom=13&amp;scale=false&amp;size=302x201&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:X%7CBlekerijstraat+75,+9000+Gent,+Belgium" alt="Google Map of Blekerijstraat 75, 9000 Gent, Belgium"></a></p>
+			</div>
+		</article>
+	</section>
+    <footer>
+    <p>&copy; 2017 vzw Whitespace. Some rights reserved.</p>
+</footer>
+<script>
+for(var i = 0, l=document.links.length; i<l; i++) {
+  if(document.links[i].href.lastIndexOf("http", 0) === 0 && document.links[i].href.split("#")[0] != window.location.href.split("#")[0]){
+	  document.links[i].target = "_blank";
+  }
+}
+</script
+</body>
+</html>
