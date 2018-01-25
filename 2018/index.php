@@ -1,4 +1,4 @@
 <?php
-header("Location: https://hackerspace.gent/newline.php"); 
+header("Location: https://hackerspace.gent/landing/newline.php"); 
 die();
 ?>
