@@ -1,7 +1,7 @@
 [
   {
     "name": "Retro games, arcade and music night",
-    "description": "We'll set up some old consoles, arcades and much more!",
+    "description": "We'll set up some old consoles, arcades and have fun!",
     "start": 1523635200,
     "duration": 32400,
     "type": "general",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Welcome!",
-    "description": "An introduction of the Hackerspace and Newline!",
+    "description": "An introduction to the Hackerspace and Newline!",
     "start": 1523656800,
     "duration": 3600,
     "type": "talk",
