@@ -2,7 +2,9 @@ Json Array, each sub-event is an object
 
 NAME - name of the sub-event
 DESCRIPTION - self-explanatory
-START - unix time of start of the sub-event (mind the timezone GMT+01:00) (if event starts at 0:00 website will show it as xx:xx (good for hours not decided yet))
+START - unix time of start of the sub-event (mind the timezone GMT+01:00)
+         Day known, time unknown: Put the event at 0h01 on that day, website will consider time to be unknown
+         Day unknown: put the event at 1/1/1970 a.k.a. zero, website will show sub-event in the unplanned category
 DURATION - duration of the event in seconds
 TYPE - one of three possibilities: general, talk, workshop (it is important to keep to these 3, contact bloemist if you want to change this)
 ROOM - once we have room identifiers, they go here

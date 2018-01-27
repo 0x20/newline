@@ -10,7 +10,7 @@
   {
     "name": "Welcome!",
     "description": "An introduction to the Hackerspace and Newline!",
-    "start": 1523656800,
+    "start": 1523660400,
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -18,7 +18,7 @@
   {
     "name": "Lightning Talks",
     "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
-    "start": 1523656800, 
+    "start": 1523660400, 
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -26,7 +26,7 @@
   {
     "name": "Foodhacking",
     "description": "Kombucha",
-    "start": 1523656800,
+    "start": 0,
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -34,7 +34,7 @@
   {
     "name": "Lockpicking",
     "description": "The workshop starts off with a short introduction of picking a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!",
-    "start": 1523656800,
+    "start": 0,
     "duration": 3600,
     "type": "workshop",
     "room": ""
@@ -42,7 +42,7 @@
   {
     "name": "Soldering",
     "description": "New to soldering, or starting out and looking for some advice? Experienced but feeling like some practice? Everyone's welcome for this workshop where we'll go over the basics quickly before giving everybody a chance to build a kit or maybe have a go at some prototyping or surface mount techniques. No knowledge required. All materials are provided and free.",
-    "start": 1523743200,
+    "start": 0,
     "duration": 3600,
     "type": "workshop",
     "room": ""
