@@ -1,0 +1,26 @@
+{
+    "version": 2018020100,
+    "url": "https://hackerspace.gent/newline/2018/xml/pentabarf.xml",
+    "title": "Newline 0x08",
+    "start": "2018-04-13",
+    "end": "2018-04-15",
+    "metadata": {
+        "icon": "https://hackerspace.gent/landing/favicon.ico",
+        "links": [
+            {
+                "url": "https://hackerspace.gent/landing/newline.php",
+                "title": "Newline 0x08"
+            }
+            {
+                "url": "https://hackerspace.gent/landing/map.php",
+                "title": "Map"
+            }
+        ],
+        "rooms": [
+            {
+                "name": "Hackerspace.Gent",
+                "latlon": [51.060271, 3.732680]
+            }
+        ]
+    }
+}
