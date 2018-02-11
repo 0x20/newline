@@ -37,8 +37,10 @@ from pentabarf.Day import Day
 from pentabarf.Room import Room
 from pentabarf.Event import Event
 
-jsonInputFile = '2018/json/data.json'
-pentabarfFile = '2018/xml/pentabarf.xml'
+CURRENT_YEAR = datetime.now().strftime("%Y")
+
+jsonInputFile = '%s/json/data.json' % (CURRENT_YEAR)
+pentabarfFile = '%s/xml/pentabarf.xml' % (CURRENT_YEAR)
 
 conferenceName = "Newline 0x08"
 conferenceVenue = "Hackerspace.Gent"
