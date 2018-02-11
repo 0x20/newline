@@ -1,14 +1,41 @@
 #!/usr/bin/env python
 # vim: set expandtab sw=4 ts=4:
+"""
+Schedule parser to convert json schedule to pentabarf XML
+
+This parser reads the Newline schedule in JSON format and produces a valid
+Pentabarf XML file. This XML is used by the Giggity Android app to navigate
+Newline schedule.
+
+Copyright (C) 2018 Dieter Adriaenssens <ruleant@users.sourceforge.net>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+"""
 
 from os.path import isfile
+from datetime import date, datetime, timedelta
+import time
+import json
 from pentabarf.Conference import Conference
 from pentabarf.Day import Day
 from pentabarf.Room import Room
 from pentabarf.Event import Event
-from datetime import date, datetime, timedelta
-import time
-import json
 
 jsonInputFile = '2018/json/data.json'
 pentabarfFile = '2018/xml/pentabarf.xml'
@@ -37,11 +64,11 @@ conf = Conference(
 )
 
 for i in range(0, conferenceDays):
-  tempDate = startDay + timedelta(days=i)
-  tempDateString = tempDate.strftime("%Y-%m-%d")
-  tempDay = Day(tempDate, tempDateString)
-  tempDay.add_room(Room(conferenceVenue))
-  conf.add_day(tempDay)
+    tempDate = startDay + timedelta(days=i)
+    tempDateString = tempDate.strftime("%Y-%m-%d")
+    tempDay = Day(tempDate, tempDateString)
+    tempDay.add_room(Room(conferenceVenue))
+    conf.add_day(tempDay)
 
 if not isfile(jsonInputFile):
     print "Inputfile '%s' does not exist" % jsonInputFile
@@ -51,7 +78,7 @@ with open(jsonInputFile) as json_data:
     newline_data = json.load(json_data)
 
     for event in newline_data:
-        tmpEventDate=datetime.fromtimestamp(event['start'])
+        tmpEventDate = datetime.fromtimestamp(event['start'])
         tmpEvent = Event(
             title=event['name'],
             description=event['description'],
