@@ -18,7 +18,7 @@
   {
     "name": "Lightning Talks",
     "description": "Anyone has the chance to present a 5 or 10 minute talk.\nJust show up if you have something interesting/entertaining.",
-    "start": 1523656860, 
+    "start": 1523656860,
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -26,7 +26,7 @@
   {
     "name": "How to run analytics, move data, or push a result to the web using a (REST) API",
     "description": "More and more tools are not monolithic pieces of software anymore, but are a collection of small components who speak with each other. Building such a platform where your web interface needs to speak to both your database and to analytics scripts, which you want to run live with your own input requires are a specific piece of software in the middle: an API. I will explain what an API actually is, what it can do, how to use it in a secure way.",
-    "start": 1523656860, 
+    "start": 1523656860,
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -34,7 +34,7 @@
   {
     "name": "Mitch Altman",
     "description": "Topic of the talk to be announced soon!",
-    "start": 1523743260, 
+    "start": 1523743260,
     "duration": 3600,
     "type": "talk",
     "room": ""
@@ -62,7 +62,7 @@
     "duration": 3600,
     "type": "talk",
     "room": ""
-  },   
+  },
   {
     "name": "DevOps: Managing the technical quality side of big projects",
     "description": "We are creating more complex projects than ever. Managing the technical quality of projects where multiple people work on can be a daunting task. Luckily a few years ago a new concept emerged: Devops. Devops is about combining multiple teams (mostly Developers and Operators) to enable the rapid development and evolution of products and services; and reduce the risk, improve the quality and reduce costs of building those projects. The Devops community also utilizes a lot of tools. Ever heard about Jenkins? Always wanted to know what this GIT is? This session will bring clarity in all the fancy buzzwords.",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Soldering with Mitch Altman",
-    "description": "New to soldering, or starting out and looking for some advice? Experienced but feeling like some practice? Everyone's welcome for this workshop where we'll go over the basics quickly before giving everybody a chance to build a kit or maybe have a go at some prototyping or surface mount techniques. No knowledge required. All materials are provided and free.",
+    "description": "Learn to Solder! You can easily learn all of the skills you need in a short time. Make a project, and take it home with you! We'll have kits to make cool, practical, intriguing, hackable things that you can bring home after you make it. Of course, you can also bring your own projects to hack.",
     "start": 0,
     "duration": 3600,
     "type": "workshop",
