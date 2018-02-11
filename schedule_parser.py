@@ -45,11 +45,19 @@ def main():
     json_input_file = '%s/json/data.json' % (current_year)
     pentabarf_file = '%s/xml/pentabarf.xml' % (current_year)
 
-    conference = read_json(json_input_file)
+    try:
+        conference = read_json(json_input_file)
+    except IOError as exc:
+        print 'IOError : %s' % str(exc.message)
+        exit()
+
     generate_pentabarf_xml(conference, pentabarf_file)
 
 def read_json(json_input_file):
     """ Read and parse the conference schedule JSON file """
+
+    if not isfile(json_input_file):
+        raise IOError("Inputfile '%s' does not exist" % json_input_file)
 
     conferenceName = "Newline 0x08"
     conferenceVenue = "Hackerspace.Gent"
@@ -81,10 +89,6 @@ def read_json(json_input_file):
         tempDay.add_room(Room(conferenceVenue))
         conf.add_day(tempDay)
 
-    if not isfile(json_input_file):
-        print "Inputfile '%s' does not exist" % json_input_file
-        exit()
-
     with open(json_input_file) as json_data:
         newline_data = json.load(json_data)
 
@@ -103,7 +107,7 @@ def read_json(json_input_file):
                 if tmpEventDate.strftime("%Y-%m-%d") == day.date.strftime("%Y-%m-%d"):
                     day.room_objects[0].add_event(tmpEvent)
 
-        return conf
+    return conf
 
 def generate_pentabarf_xml(conf_schedule, xml_file):
     """ Generate and write Pentabarf XML file """
