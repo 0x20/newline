@@ -59,60 +59,68 @@ def read_json(json_input_file):
     if not isfile(json_input_file):
         raise IOError("Inputfile '%s' does not exist" % json_input_file)
 
-    conferenceName = "Newline 0x08"
-    conferenceVenue = "Hackerspace.Gent"
-    conferenceCity = "Ghent"
-    conferenceStart = "2018-04-13"
-    conferenceEnd = "2018-04-15"
-    conferenceDayChange = "06:00"
-    conferenceTimeslotDuration = "00:30"
-
-    startDay = datetime.strptime(conferenceStart, "%Y-%m-%d")
-    endDay = datetime.strptime(conferenceEnd, "%Y-%m-%d")
-    conferenceDays = int((abs(endDay - startDay)).total_seconds() / (3600 * 24)) + 1
-
-    conf = Conference(
-        title=conferenceName,
-        venue=conferenceVenue,
-        city=conferenceCity,
-        start=startDay,
-        end=endDay,
-        days=conferenceDays,
-        day_change=conferenceDayChange,
-        timeslot_duration=conferenceTimeslotDuration
-        )
-
-    for i in range(0, conferenceDays):
-        tempDate = startDay + timedelta(days=i)
-        tempDateString = tempDate.strftime("%Y-%m-%d")
-        tempDay = Day(tempDate, tempDateString)
-        tempDay.add_room(Room(conferenceVenue))
-        conf.add_day(tempDay)
-
     with open(json_input_file) as json_data:
         newline_data = json.load(json_data)
 
-        for event in newline_data['event_schedule']:
+        # read conference data from json file
+        conference_venue = newline_data.get('event_venue') or "Venue"
+        start_day = datetime.fromtimestamp(
+            float(newline_data.get('event_start'))
+        )
+        end_day = datetime.fromtimestamp(
+            float(newline_data.get('event_end'))
+        )
+        conference_days = 1 + int(
+            (abs(end_day - start_day)).total_seconds() / (3600 * 24)
+        )
 
+        # create conference instance
+        conf = Conference(
+            title=newline_data.get('event_name') or "Event Name",
+            venue=conference_venue,
+            city=newline_data.get('event_city') or "City",
+            start=start_day,
+            end=end_day,
+            days=conference_days,
+            day_change='06:00',
+            timeslot_duration='00:30'
+        )
+
+        # create day instances
+        for i in range(0, conference_days):
+            tmp_date = start_day + timedelta(days=i)
+            tmp_date_string = tmp_date.strftime("%Y-%m-%d")
+            tmp_day = Day(tmp_date, tmp_date_string)
+            tmp_day.add_room(Room(conference_venue))
+            conf.add_day(tmp_day)
+
+        # loop over events in json data file to create schedule instances
+        for event in newline_data.get('event_schedule'):
             # only add event if the scheduled status is final
             # else jump to the next event
-            if not event['scheduled'] == 'final':
+            if not event.get('scheduled') == 'final':
                 continue
 
-            tmpEventDate = datetime.fromtimestamp(event['start'])
-            tmpEvent = Event(
-                id=event['id'],
-                title=event['name'],
-                description=event['description'],
-                type=event['type'],
-                duration=time.strftime("%H:%M:%S", time.gmtime(event['duration'])),
-                date=tmpEventDate,
-                start=tmpEventDate.strftime("%H:%M:%S")
+            tmp_event_date = datetime.fromtimestamp(float(event.get('start')))
+            tmp_duration = time.strftime(
+                "%H:%M:%S",
+                time.gmtime(event.get('duration'))
+            )
+
+            tmp_event = Event(
+                id=event.get('id'),
+                title=event.get('name'),
+                description=event.get('description'),
+                type=event.get('type'),
+                duration=tmp_duration,
+                date=tmp_event_date,
+                start=tmp_event_date.strftime("%H:%M:%S")
                 )
 
+            # add event to correct day
             for day in conf.day_objects:
-                if tmpEventDate.strftime("%Y-%m-%d") == day.date.strftime("%Y-%m-%d"):
-                    day.room_objects[0].add_event(tmpEvent)
+                if tmp_event_date.strftime("%Y-%m-%d") == day.date.strftime("%Y-%m-%d"):
+                    day.room_objects[0].add_event(tmp_event)
 
     return conf
 
