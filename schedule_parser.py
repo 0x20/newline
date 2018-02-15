@@ -92,9 +92,16 @@ def read_json(json_input_file):
     with open(json_input_file) as json_data:
         newline_data = json.load(json_data)
 
-        for event in newline_data:
+        for event in newline_data['event_schedule']:
+
+            # only add event if the scheduled status is final
+            # else jump to the next event
+            if not event['scheduled'] == 'final':
+                continue
+
             tmpEventDate = datetime.fromtimestamp(event['start'])
             tmpEvent = Event(
+                id=event['id'],
                 title=event['name'],
                 description=event['description'],
                 type=event['type'],
