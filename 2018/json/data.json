@@ -1,154 +1,207 @@
-[
-  {
-    "name": "Retro games, arcade and music night",
-    "description": "We'll set up some old consoles, arcades and have fun!",
-    "start": 1523635200,
-    "duration": 32400,
-    "type": "general",
-    "room": ""
-  },
-  {
-    "name": "Welcome!",
-    "description": "An introduction to the Hackerspace and Newline!",
-    "start": 1523703600,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Lightning Talks",
-    "description": "Anyone has the chance to present a 5 or 10 minute talk.\nJust show up if you have something interesting/entertaining.",
-    "start": 1523656860,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "How to run analytics, move data, or push a result to the web using a (REST) API",
-    "description": "More and more tools are not monolithic pieces of software anymore, but are a collection of small components who speak with each other. Building such a platform where your web interface needs to speak to both your database and to analytics scripts, which you want to run live with your own input requires are a specific piece of software in the middle: an API. I will explain what an API actually is, what it can do, how to use it in a secure way.",
-    "start": 1523656860,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Mitch Altman",
-    "description": "Topic of the talk to be announced soon!",
-    "start": 1523743260,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Science is broken - or is it?",
-    "description": "In the debate about the state of science, the faction that claims that 'science is broken' is the most vocal one. However, they often oversimplify the discourse on the matter. In this talk, we will outline where the 'sciene is broken' sentiment comes from, why it applies to some degree, but also why it's not all doom and gloom.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Let's go camping!",
-    "description": "We want to invite you all to our two-annual Belgian hacker camp, Fri3d Camp 2018, from 18 to 20 august 2018 at the huge forest domain De Kluis in Sint-Joris-Weert. I (and maybe some other orga) would like to present our camp, invite you all and discuss open questions and suggestions for our camp. If time permits, we may also discuss the development of our camp badge.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Software Defined Radio with HackRF One for beginners",
-    "description": "A short introduction into software defined radio using the HackRF One from Great Scott Gadgets with Gnu Radio. Will talk a bit about the basic concepts and then hack the garage door!",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "DevOps: Managing the technical quality side of big projects",
-    "description": "We are creating more complex projects than ever. Managing the technical quality of projects where multiple people work on can be a daunting task. Luckily a few years ago a new concept emerged: Devops. Devops is about combining multiple teams (mostly Developers and Operators) to enable the rapid development and evolution of products and services; and reduce the risk, improve the quality and reduce costs of building those projects. The Devops community also utilizes a lot of tools. Ever heard about Jenkins? Always wanted to know what this GIT is? This session will bring clarity in all the fancy buzzwords.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Scheduling (big) data pipelines",
-    "description": "Back-end projects are often split in multiple split tasks. Most tools include their own scheduler. But if you want to combine your ETL flow with your spark jobs with specific python or R scripts, a more specialized scheduler will be needed. In this session I will explain multiple scheduling concepts (DAG, triggers, Branching, parameters and ‘batching’) with Airflow, AirBNB’s own scheduling solutions.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Biohacking intro",
-    "description": "Intro to biohacking: what's growing in the world/europe/belgium/ghent? What can YOU do/feed/grow/kill/discover tomorrow?",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Hardware-Based Trusted Computing from an Attack/Defense Perspective",
-    "description": "Protected module architectures (PMAs) are a new brand of security architectures whose main objective is to support the secure isolated execution of software modules with a minimal Trusted Computing Base (TCB). Several prototypes for embedded systems, and also the Software Guard eXtensions (SGX) included in recent Intel x86 processors, ensure isolation with a hardware-only TCB. This talk, based on my ongoing PhD research, highlights two complementary lines of PMA research. On the one hand, I will introduce the free/open-source Sancus hardware-level PMA and embedded (automotive) security applications we are actively developing. On the other hand, I will overview our recent research efforts on side-channel attacks against off-the-shelf Intel SGX platforms.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "Wireless Belgium",
-    "description": "An introduction about Community based WAN (ISP) and LoRaWAN technology.",
-    "start": 0,
-    "duration": 3600,
-    "type": "talk",
-    "room": ""
-  },
-  {
-    "name": "DIY bio techniques",
-    "description": "Workshop: let us know what you want to learn about: bioplastics, slime mold, genetic barcoding or requests! Let us know on the event Facebook page https://www.facebook.com/events/143174433013216 or send a message to info@hackerspace.gent",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
-  },
-  {
-    "name": "Kombucha is easy!",
-    "description": "Kombucha culture is used to make a healthy probiotic beverages which are good for the digestion. Based on research it also supports your immunity system, lowers risks of variety of cancers and allergy reactions. You will taste different beverages, learn how take properly care of a kombucha culture (mother/SCOBY), how to brew the beverage and take home some culture and the manual so you can continue to do this at home or at your local hackerspace. Biotechnologist and fermentologist Algoldor will teach you step for step and also chat about various alternative usages. This workshop is donation based (PWYW) since Algoldor will be coming all the way from France to give this workshop and will provide the culture and drinks.",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
-  },
-  {
-    "name": "Introduction to vim",
-    "description": "for all of you that edit text files(i'm not talking about Microsoft Word) for a living. There’s a reason people love this editor. find out why during this hands-on workshop. Bring a laptop. You won't need a mouse, ever.",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
-  },
-  {
-    "name": "Foodhacking",
-    "description": "Kombucha",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
-  },
-  {
-    "name": "Lockpicking",
-    "description": "The workshop starts off with a short introduction of picking a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
-  },
-  {
-    "name": "Soldering with Mitch Altman",
-    "description": "Learn to Solder! You can easily learn all of the skills you need in a short time. Make a project, and take it home with you! We'll have kits to make cool, practical, intriguing, hackable things that you can bring home after you make it. Of course, you can also bring your own projects to hack.",
-    "start": 0,
-    "duration": 3600,
-    "type": "workshop",
-    "room": ""
+{
+    "event_name": "Newline 0x08",
+    "event_venue": "hackerspace.gent",
+    "event_city": "Ghent",
+    "event_start": "1523570400",
+    "event_end": "1523829599",
+    "event_schedule": [
+      {
+        "id": 1,
+        "name": "Retro games, arcade and music night",
+        "description": "We'll set up some old consoles, arcades and have fun!",
+        "start": 1523635200,
+        "duration": 32400,
+        "type": "general",
+        "room": "",
+        "scheduled": "final",
+        "speakers": []
+      },
+      {
+        "id": 2,
+        "name": "Welcome!",
+        "description": "An introduction to the Hackerspace and Newline!",
+        "start": 1523703600,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "final",
+        "speakers": []
+      },
+      {
+        "id": 3,
+        "name": "Lightning Talks",
+        "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
+        "start": 1523656800,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "day",
+        "speakers": []
+      },
+      {
+        "id": 4,
+        "name": "How to run analytics, move data, or push a result to the web using a (REST) API",
+        "description": "More and more tools are not monolithic pieces of software anymore, but are a collection of small components who speak with each other. Building such a platform where your web interface needs to speak to both your database and to analytics scripts, which you want to run live with your own input requires are a specific piece of software in the middle: an API. I will explain what an API actually is, what it can do, how to use it in a secure way.",
+        "start": 1523656800,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "day",
+        "speakers": []
+      },
+      {
+        "id": 5,
+        "name": "Mitch Altman",
+        "description": "Topic of the talk to be announced soon!",
+        "start": 1523743200,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "day",
+        "speakers": ["Mitch Altman"]
+      },
+      {
+        "id": 6,
+        "name": "Science is broken - or is it?",
+        "description": "In the debate about the state of science, the faction that claims that 'science is broken' is the most vocal one. However, they often oversimplify the discourse on the matter. In this talk, we will outline where the 'sciene is broken' sentiment comes from, why it applies to some degree, but also why it's not all doom and gloom.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 7,
+        "name": "Let's go camping!",
+        "description": "We want to invite you all to our two-annual Belgian hacker camp, Fri3d Camp 2018, from 18 to 20 august 2018 at the huge forest domain De Kluis in Sint-Joris-Weert. I (and maybe some other orga) would like to present our camp, invite you all and discuss open questions and suggestions for our camp. If time permits, we may also discuss the development of our camp badge.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 8,
+        "name": "Software Defined Radio with HackRF One for beginners",
+        "description": "A short introduction into software defined radio using the HackRF One from Great Scott Gadgets with Gnu Radio. Will talk a bit about the basic concepts and then hack the garage door!",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 9,
+        "name": "DevOps: Managing the technical quality side of big projects",
+        "description": "We are creating more complex projects than ever. Managing the technical quality of projects where multiple people work on can be a daunting task. Luckily a few years ago a new concept emerged: Devops. Devops is about combining multiple teams (mostly Developers and Operators) to enable the rapid development and evolution of products and services; and reduce the risk, improve the quality and reduce costs of building those projects. The Devops community also utilizes a lot of tools. Ever heard about Jenkins? Always wanted to know what this GIT is? This session will bring clarity in all the fancy buzzwords.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 10,
+        "name": "Scheduling (big) data pipelines",
+        "description": "Back-end projects are often split in multiple split tasks. Most tools include their own scheduler. But if you want to combine your ETL flow with your spark jobs with specific python or R scripts, a more specialized scheduler will be needed. In this session I will explain multiple scheduling concepts (DAG, triggers, Branching, parameters and ‘batching’) with Airflow, AirBNB’s own scheduling solutions.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 11,
+        "name": "Biohacking intro",
+        "description": "Intro to biohacking: what's growing in the world/europe/belgium/ghent? What can YOU do/feed/grow/kill/discover tomorrow?",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 12,
+        "name": "Hardware-Based Trusted Computing from an Attack/Defense Perspective",
+        "description": "Protected module architectures (PMAs) are a new brand of security architectures whose main objective is to support the secure isolated execution of software modules with a minimal Trusted Computing Base (TCB). Several prototypes for embedded systems, and also the Software Guard eXtensions (SGX) included in recent Intel x86 processors, ensure isolation with a hardware-only TCB. This talk, based on my ongoing PhD research, highlights two complementary lines of PMA research. On the one hand, I will introduce the free/open-source Sancus hardware-level PMA and embedded (automotive) security applications we are actively developing. On the other hand, I will overview our recent research efforts on side-channel attacks against off-the-shelf Intel SGX platforms.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 13,
+        "name": "Wireless Belgium",
+        "description": "An introduction about Community based WAN (ISP) and LoRaWAN technology.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 14,
+        "name": "DIY bio techniques",
+        "description": "Workshop: let us know what you want to learn about: bioplastics, slime mold, genetic barcoding or requests! Let us know on the event Facebook page https://www.facebook.com/events/143174433013216 or send a message to info@hackerspace.gent",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 15,
+        "name": "Kombucha is easy!",
+        "description": "Kombucha culture is used to make a healthy probiotic beverages which are good for the digestion. Based on research it also supports your immunity system, lowers risks of variety of cancers and allergy reactions. You will taste different beverages, learn how take properly care of a kombucha culture (mother/SCOBY), how to brew the beverage and take home some culture and the manual so you can continue to do this at home or at your local hackerspace. Biotechnologist and fermentologist Algoldor will teach you step for step and also chat about various alternative usages. This workshop is donation based (PWYW) since Algoldor will be coming all the way from France to give this workshop and will provide the culture and drinks.",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 16,
+        "name": "Introduction to vim",
+        "description": "for all of you that edit text files(i'm not talking about Microsoft Word) for a living. There’s a reason people love this editor. find out why during this hands-on workshop. Bring a laptop. You won't need a mouse, ever.",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 17,
+        "name": "Lockpicking",
+        "description": "The workshop starts off with a short introduction of picking a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 18,
+        "name": "Soldering with Mitch Altman",
+        "description": "New to soldering, or starting out and looking for some advice? Experienced but feeling like some practice? Everyone's welcome for this workshop where we'll go over the basics quickly before giving everybody a chance to build a kit or maybe have a go at some prototyping or surface mount techniques. No knowledge required. All materials are provided and free.",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "room": "",
+        "scheduled": "unknown",
+        "speakers": ["Mitch Altman"]
+      }
+    ]
   }
-]
