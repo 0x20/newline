@@ -1,6 +1,7 @@
 {
     "event_name": "Newline 0x08",
     "event_venue": "hackerspace.gent",
+    "event_url": "https://hackerspace.gent/newline",
     "event_city": "Ghent",
     "event_start": "1523570400",
     "event_end": "1523829599",
@@ -12,7 +13,7 @@
         "start": 1523635200,
         "duration": 32400,
         "type": "general",
-        "room": "",
+        "room": ["1.21"],
         "scheduled": "final",
         "speakers": []
       },
@@ -23,7 +24,7 @@
         "start": 1523703600,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "final",
         "speakers": []
       },
@@ -34,7 +35,7 @@
         "start": 1523656800,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "day",
         "speakers": []
       },
@@ -45,7 +46,7 @@
         "start": 1523656800,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "day",
         "speakers": []
       },
@@ -56,7 +57,7 @@
         "start": 1523743200,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "day",
         "speakers": ["Mitch Altman"]
       },
@@ -67,7 +68,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -78,7 +79,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -89,7 +90,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -100,7 +101,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -111,7 +112,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -122,7 +123,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -133,7 +134,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -144,7 +145,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -155,7 +156,7 @@
         "start": 0,
         "duration": 3600,
         "type": "workshop",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -166,7 +167,7 @@
         "start": 0,
         "duration": 3600,
         "type": "workshop",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -177,7 +178,7 @@
         "start": 0,
         "duration": 3600,
         "type": "workshop",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -188,7 +189,7 @@
         "start": 0,
         "duration": 3600,
         "type": "workshop",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -199,7 +200,7 @@
         "start": 0,
         "duration": 3600,
         "type": "workshop",
-        "room": "",
+        "rooms": [],
         "scheduled": "unknown",
         "speakers": ["Mitch Altman"]
       }
