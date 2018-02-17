@@ -107,22 +107,33 @@ def read_json(json_input_file):
                 time.gmtime(event.get('duration'))
             )
 
-            tmp_event = Event(
-                id=event.get('id'),
-                title=event.get('name'),
-                description=event.get('description'),
-                type=event.get('type'),
-                duration=tmp_duration,
-                date=tmp_event_date,
-                start=tmp_event_date.strftime("%H:%M:%S")
+            add_event2conference(
+                conf,
+                Event(
+                    id=event.get('id'),
+                    title=event.get('name'),
+                    description=event.get('description'),
+                    type=event.get('type'),
+                    duration=tmp_duration,
+                    date=tmp_event_date,
+                    start=tmp_event_date.strftime("%H:%M:%S")
                 )
-
-            # add event to correct day
-            for day in conf.day_objects:
-                if tmp_event_date.strftime("%Y-%m-%d") == day.date.strftime("%Y-%m-%d"):
-                    day.room_objects[0].add_event(tmp_event)
+            )
 
     return conf
+
+def add_event2conference(conference, event):
+    """ Add event to a conference """
+    # look for to the correct conference day
+    for conf_day in conference.day_objects:
+        if event.date.strftime("%Y-%m-%d") \
+            == conf_day.date.strftime("%Y-%m-%d"):
+
+            add_event2day(conf_day, event)
+
+def add_event2day(day, event):
+    """ Add event to a conference day """
+    day.room_objects[0].add_event(event)
 
 def generate_pentabarf_xml(conf_schedule, xml_file):
     """ Generate and write Pentabarf XML file """
