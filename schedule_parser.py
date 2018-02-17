@@ -63,7 +63,6 @@ def read_json(json_input_file):
         newline_data = json.load(json_data)
 
         # read conference data from json file
-        conference_venue = newline_data.get('event_venue') or "Venue"
         start_day = datetime.fromtimestamp(
             float(newline_data.get('event_start'))
         )
@@ -77,7 +76,7 @@ def read_json(json_input_file):
         # create conference instance
         conf = Conference(
             title=newline_data.get('event_name') or "Event Name",
-            venue=conference_venue,
+            venue=newline_data.get('event_venue') or "Venue",
             city=newline_data.get('event_city') or "City",
             start=start_day,
             end=end_day,
@@ -86,13 +85,7 @@ def read_json(json_input_file):
             timeslot_duration='00:30'
         )
 
-        # create day instances
-        for i in range(0, conference_days):
-            tmp_date = start_day + timedelta(days=i)
-            tmp_date_string = tmp_date.strftime("%Y-%m-%d")
-            tmp_day = Day(tmp_date, tmp_date_string)
-            tmp_day.add_room(Room(conference_venue))
-            conf.add_day(tmp_day)
+        populate_conference_days(conf)
 
         # loop over events in json data file to create schedule instances
         for event in newline_data.get('event_schedule'):
@@ -134,6 +127,15 @@ def add_event2conference(conference, event):
 def add_event2day(day, event):
     """ Add event to a conference day """
     day.room_objects[0].add_event(event)
+
+def populate_conference_days(conference):
+    """ Populate conference  with day instances """
+    for i in range(0, conference.days):
+        tmp_date = conference.start + timedelta(days=i)
+        tmp_date_string = tmp_date.strftime("%Y-%m-%d")
+        tmp_day = Day(tmp_date, tmp_date_string)
+        tmp_day.add_room(Room(conference.venue))
+        conference.add_day(tmp_day)
 
 def generate_pentabarf_xml(conf_schedule, xml_file):
     """ Generate and write Pentabarf XML file """
