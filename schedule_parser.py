@@ -29,13 +29,14 @@ IN THE SOFTWARE.
 """
 
 from os.path import isfile
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 import time
 import json
 from pentabarf.Conference import Conference
 from pentabarf.Day import Day
 from pentabarf.Room import Room
 from pentabarf.Event import Event
+from pentabarf.Person import Person
 
 def main():
     """ Main function, reads the json file and generates the Pentabarf XML """
@@ -100,17 +101,24 @@ def read_json(json_input_file):
                 time.gmtime(event.get('duration'))
             )
 
+            # create event
+            tmp_event = Event(
+                id=event.get('id'),
+                title=event.get('name'),
+                description=event.get('description'),
+                type=event.get('type'),
+                duration=tmp_duration,
+                date=tmp_event_date,
+                start=tmp_event_date.strftime("%H:%M:%S")
+            )
+
+            # add speakers to event
+            for speaker in event.get('speakers'):
+                tmp_event.add_person(Person(name=speaker))
+
             add_event2conference(
                 conf,
-                Event(
-                    id=event.get('id'),
-                    title=event.get('name'),
-                    description=event.get('description'),
-                    type=event.get('type'),
-                    duration=tmp_duration,
-                    date=tmp_event_date,
-                    start=tmp_event_date.strftime("%H:%M:%S")
-                ),
+                tmp_event,
                 event.get('room')
             )
 
@@ -150,7 +158,7 @@ def add_event2day(conference, day, event, event_rooms):
                 day_room.add_event(event)
 
 def populate_conference_days(conference):
-    """ Populate conference  with day instances """
+    """ Populate conference with day instances """
     for i in range(0, conference.days):
         tmp_date = conference.start + timedelta(days=i)
         tmp_date_string = tmp_date.strftime("%Y-%m-%d")
