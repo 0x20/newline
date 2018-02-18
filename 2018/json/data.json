@@ -13,7 +13,7 @@
         "start": 1523635200,
         "duration": 32400,
         "type": "general",
-        "room": ["1.21"],
+        "rooms": ["1.21"],
         "scheduled": "final",
         "speakers": []
       },

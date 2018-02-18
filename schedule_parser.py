@@ -119,7 +119,7 @@ def read_json(json_input_file):
             add_event2conference(
                 conf,
                 tmp_event,
-                event.get('room')
+                event.get('rooms')
             )
 
     return conf
