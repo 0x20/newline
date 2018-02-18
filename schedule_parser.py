@@ -110,23 +110,44 @@ def read_json(json_input_file):
                     duration=tmp_duration,
                     date=tmp_event_date,
                     start=tmp_event_date.strftime("%H:%M:%S")
-                )
+                ),
+                event.get('room')
             )
 
     return conf
 
-def add_event2conference(conference, event):
+def add_event2conference(conference, event, event_rooms):
     """ Add event to a conference """
     # look for to the correct conference day
     for conf_day in conference.day_objects:
         if event.date.strftime("%Y-%m-%d") \
             == conf_day.date.strftime("%Y-%m-%d"):
 
-            add_event2day(conf_day, event)
+            add_event2day(conference, conf_day, event, event_rooms)
 
-def add_event2day(day, event):
+def add_event2day(conference, day, event, event_rooms):
     """ Add event to a conference day """
-    day.room_objects[0].add_event(event)
+    # use conference venue as default room
+    if not event_rooms:
+        event_rooms = [conference.venue]
+
+    # event_rooms should be a list
+    if type(event_rooms) is not list:
+        event_rooms = [event_rooms]
+
+    for event_room in event_rooms:
+        # create room if no rooms are defined yet
+        if not day.room_objects:
+            day.add_room(Room(event_room))
+
+        for day_room in day.room_objects:
+            # add event room if it doesn't exist for the conference day
+            if not day_room.name in event_rooms:
+                day.add_room(Room(event_room))
+
+            # add event to room
+            if event_room == day_room.name:
+                day_room.add_event(event)
 
 def populate_conference_days(conference):
     """ Populate conference  with day instances """
@@ -134,7 +155,6 @@ def populate_conference_days(conference):
         tmp_date = conference.start + timedelta(days=i)
         tmp_date_string = tmp_date.strftime("%Y-%m-%d")
         tmp_day = Day(tmp_date, tmp_date_string)
-        tmp_day.add_room(Room(conference.venue))
         conference.add_day(tmp_day)
 
 def generate_pentabarf_xml(conf_schedule, xml_file):
