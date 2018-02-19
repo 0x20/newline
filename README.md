@@ -19,14 +19,16 @@ The python parser script relies on these packages :
 
 Install depedencies by running
 
-  pip install -r requirements.txt
-
+```bash
+pip install -r requirements.txt
+```
 
 # Handy information:
 
 If you want to commit from the server itself, use this command to specify your name and email address
 
-  git -c user.name='<NAME>' -c user.email='<EMAIL>' commit -m '<TEXT>'
-
+```bash
+git -c user.name='<NAME>' -c user.email='<EMAIL>' commit -m '<TEXT>'
+```
 
 Thanks to: http://writing.markchristian.org/2011/03/10/how-to-deploy-your-code-from-github-automatically.html
