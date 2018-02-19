@@ -8,7 +8,7 @@ Everytime a commit is pushed to [this repository](https://github.com/0x20/newlin
 
 # Schedule parser
 
-A parser script reads the newline schedule json data file (<year>/json/data.json) and generates a Pentabarf XML (<year>/xml/pentabarf.xml).
+A parser script reads the newline schedule json data file (\<year\>/json/data.json) and generates a Pentabarf XML (\<year\>/xml/pentabarf.xml).
 
 ## Requirements
 
