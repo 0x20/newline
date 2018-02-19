@@ -6,7 +6,7 @@ DESCRIPTION - self-explanatory
 START - unix time of start of the sub-event. use in combination with "scheduled" 
 DURATION - duration of the event in seconds
 TYPE - one of three possibilities: general, talk, workshop (it is important to keep to these 3, contact bloemist if you want to change this)
-ROOM - once we have room identifiers, they go here
+ROOMS - once we have room identifiers, they go here
 SCHEDULED - either "unknown" (timestamp = 0, no date or time), "day" (day of the timestamp, hour unknown) or "final" (timestamp is accurate (ofc you can still update later))
 SPEAKERS - array of speaker name(s)
 
