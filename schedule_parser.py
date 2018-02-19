@@ -140,7 +140,7 @@ def add_event2day(conference, day, event, event_rooms):
         event_rooms = [conference.venue]
 
     # event_rooms should be a list
-    if type(event_rooms) is not list:
+    if not isinstance(event_rooms, list):
         event_rooms = [event_rooms]
 
     for event_room in event_rooms:
