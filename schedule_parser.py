@@ -49,10 +49,10 @@ def main():
     try:
         conference = read_json(json_input_file)
     except IOError as exc:
-        print 'IOError : %s' % str(exc.message)
+        print('IOError : %s' % str(exc.message))
         exit()
     except ValueError as exc:
-        print 'ValueError : %s' % str(exc.message)
+        print('ValueError : %s' % str(exc.message))
         exit()
 
     generate_pentabarf_xml(conference, pentabarf_file)
