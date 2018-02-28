@@ -16,10 +16,12 @@
             "type": "string"
 	},
         "event_start": {
-	    "type": "integer"
+	    "type": "integer",
+	    "minimum": 0
 	},
         "event_end": {
-	    "type": "integer"
+	    "type": "integer",
+	    "minimum": 0
 	},
 	"event_schedule": {
             "type": "array",
@@ -27,7 +29,8 @@
                 "type": "object",
 		"properties" : {
                     "id": {
-                        "type": "integer"
+                        "type": "integer",
+                        "minimum": 0
                     },
                     "name": {
                         "type": "string"
@@ -36,10 +39,12 @@
                         "type": "string"
                     },
                     "start": {
-                        "type": "integer"
+                        "type": "integer",
+                        "minimum": 0
                     },
 	            "duration": {
-                        "type": "integer"
+                        "type": "integer",
+                        "minimum": 0
                     },
                     "type": {
                         "type": "string"
