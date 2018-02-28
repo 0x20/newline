@@ -13,4 +13,7 @@ install:
   # install dependencies
   - CFLAGS="-O0" pip install -r requirements.txt
 script:
-- ./test_schedule_parser.py
+  # unit test schedule_parser script
+  - ./test_schedule_parser.py
+  # validate conference json schema
+  - jsonschema -i `date +%Y`/json/data.json `date +%Y`/json/data_schema.json
