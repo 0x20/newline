@@ -15,6 +15,7 @@ A parser script reads the newline schedule json data file (\<year\>/json/data.js
 The python parser script relies on these packages :
 
 * lxml
+* jsonschedule
 * python-pentabarf-xml
 
 Install depedencies by running
