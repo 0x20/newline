@@ -20,7 +20,7 @@ script:
 deploy:
   # update website on a successful build
   provider: script
-  script: wget https://hackerspace.gent/newline/pull.php
+  script: curl https://hackerspace.gent/newline/pull.php
   on:
     branch: master
     python: 2.7
