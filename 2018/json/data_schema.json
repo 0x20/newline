@@ -47,7 +47,8 @@
                         "minimum": 0
                     },
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "enum" : [ "general", "talk", "workshop" ]
                     },
 	            "scheduled": {
                         "type": "string",
