@@ -11,3 +11,7 @@ SCHEDULED - either "unknown" (timestamp = 0, no date or time), "day" (day of the
 SPEAKERS - array of speaker name(s)
 
 Dont go changing things without understanding the structure!
+
+The json schedule is validated against a schema (data_schema.json), using Json Schema (see .travis.yml).
+Update the schema file as well if you make changes to the schema.
+More info on Json Schema : http://json-schema.org/
