@@ -23,3 +23,4 @@ deploy:
   script: wget https://hackerspace.gent/newline/pull.php
   on:
     branch: master
+    python: 2.7
