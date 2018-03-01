@@ -1,10 +1,13 @@
 # How this repository works
 
-Everytime a commit is pushed to [this repository](https://github.com/0x20/newline), github posts to `https://hackerspace.gent/newline/pull.php` triggering a `git pull` in the `0x20.be/newline` repository, and a parser script generates a pentabarf XML from the JSON conference schedule.
+Everytime a commit is pushed to [this repository](https://github.com/0x20/newline), a Travis-CI is triggered. The job validates the Newline JSON schedule and tests the parser script. On a successful Travis build a webhook `https://hackerspace.gent/newline/pull.php` is called, triggering a `git pull` in the `0x20.be/newline` repository, and a parser script generates a pentabarf XML from the JSON conference schedule.
 
 - `.htaccess`: This file redirects `/newline` to `/newline/2018`. **This needs to be changed every year.**
 - `2015/`, `2016/`, `/20..`: Each year has its own directory. **Add a new directory each year**
 - `pull.php`: This file calls `git pull` when accessed. This is needed for automatic sync with github, so **do not change it!**
+- `.travis.yml`: configuration for the Travis CI build job
+- `schedule_parser.py` : python script that generates a Pentabarf XML file from the Newline schedule JSON file.
+- `test` : folder with data to test the `schedule_parser.py` script.
 
 # Schedule parser
 
@@ -15,6 +18,7 @@ A parser script reads the newline schedule json data file (\<year\>/json/data.js
 The python parser script relies on these packages :
 
 * lxml
+* jsonschedule
 * python-pentabarf-xml
 
 Install depedencies by running

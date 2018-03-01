@@ -49,7 +49,10 @@ def main():
     try:
         conference = read_json(json_input_file)
     except IOError as exc:
-        print 'IOError : %s' % str(exc.message)
+        print('IOError : %s' % str(exc.message))
+        exit()
+    except ValueError as exc:
+        print('ValueError : %s' % str(exc.message))
         exit()
 
     generate_pentabarf_xml(conference, pentabarf_file)
@@ -57,11 +60,19 @@ def main():
 def read_json(json_input_file):
     """ Read and parse the conference schedule JSON file """
 
+    if not isinstance(json_input_file, str):
+        raise TypeError("parameter json_input_file should be a string/path")
+
     if not isfile(json_input_file):
         raise IOError("Inputfile '%s' does not exist" % json_input_file)
 
     with open(json_input_file) as json_data:
-        newline_data = json.load(json_data)
+        try:
+            newline_data = json.load(json_data)
+        except ValueError:
+            raise ValueError(
+                "Inputfile '%s' contains invalid JSON" % json_input_file
+            )
 
         # read conference data from json file
         start_day = datetime.fromtimestamp(

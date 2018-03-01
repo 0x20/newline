@@ -1,2 +1,3 @@
 lxml
+jsonschema
 git+https://github.com/ruleant/python-pentabarf-xml.git@pretty_print
