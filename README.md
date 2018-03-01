@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/0x20/newline.svg?branch=master)](https://travis-ci.org/0x20/newline)
+
 # How this repository works
 
 Everytime a commit is pushed to [this repository](https://github.com/0x20/newline), a Travis-CI is triggered. The job validates the Newline JSON schedule and tests the parser script. On a successful Travis build a webhook `https://hackerspace.gent/newline/pull.php` is called, triggering a `git pull` in the `0x20.be/newline` repository, and a parser script generates a pentabarf XML from the JSON conference schedule.
