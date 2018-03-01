@@ -17,13 +17,9 @@ script:
   - ./test_schedule_parser.py
   # validate conference json schema
   - jsonschema -i `date +%Y`/json/data.json `date +%Y`/json/data_schema.json
-notifications:
-  webhooks:
-    # update website on a successful build
-    urls:
-      - https://hackerspace.gent/newline/pull.php
-    on_success: always # default: always
-    on_failure: never # default: always
-    on_start: never   # default: never
-    on_cancel: never # default: always
-    on_error: never # default: always
+deploy:
+  # update website on a successful build
+  provider: script
+  script: wget https://hackerspace.gent/newline/pull.php
+  on:
+    branch: master
