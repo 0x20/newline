@@ -12,8 +12,8 @@
         "description": "We'll set up some old consoles, arcades and have fun!",
         "start": 1523635200,
         "duration": 32400,
-        "type": "general",
-        "rooms": ["1.21"],
+        "type": "genera",
+        "rooms": "1.21",
         "scheduled": "final",
         "speakers": []
       },
@@ -22,7 +22,6 @@
         "name": "Welcome!",
         "description": "An introduction to the Hackerspace and Newline!",
         "start": 1523703600,
-        "duration": 3600,
         "type": "talk",
         "rooms": [],
         "scheduled": "final",
