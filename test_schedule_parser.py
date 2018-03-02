@@ -41,8 +41,8 @@ class TestScheduleParser(unittest.TestCase):
     def setUp(self):
         """Initialise test environment before each test."""
 
-    def test_read_json(self):
-        """Test read_json function"""
+    def test_read_json_invalid(self):
+        """Test read_json function with invalid input """
         # function takes a filename (string) as argument
         self.assertRaises(TypeError, read_json)
         self.assertRaises(TypeError, read_json, 123)
@@ -56,13 +56,104 @@ class TestScheduleParser(unittest.TestCase):
         self.assertRaises(ValueError, read_json, "test/invalid.txt")
         self.assertRaises(ValueError, read_json, "test/invalid.json")
 
+    def test_read_json_valid(self):
+        """Test read_json function with valid input """
         # function returns a Conference instance if json is valid
         conference = read_json("test/correct_data.json")
         self.assertTrue(isinstance(conference, Conference))
 
+        # checks conference parameters
+        self.assertEqual("Newline 0x08", conference.title)
+        self.assertEqual("hackerspace.gent", conference.venue)
+        self.assertEqual("Ghent", conference.city)
+        self.assertEqual(3, conference.days)
+        self.assertEqual("06:00", conference.day_change)
+        self.assertEqual("00:30", conference.timeslot_duration)
+        self.assertTrue(isinstance(conference.start, datetime))
+        self.assertEqual("2018-04-13", conference.start.strftime("%Y-%m-%d"))
+        self.assertTrue(isinstance(conference.end, datetime))
+        self.assertEqual("2018-04-15", conference.end.strftime("%Y-%m-%d"))
+
         # conference should have 3 days
         self.assertEqual(3, len(conference.day_objects))
 
+        # check first day
+        firstday = conference.day_objects[0]
+        self.assertTrue(isinstance(firstday.date, datetime))
+        self.assertEqual("2018-04-13", firstday.date.strftime("%Y-%m-%d"))
+        self.assertEqual(1, len(firstday.room_objects))
+
+        # check room 1 on first day
+        test_room = firstday.room_objects[0]
+        self.assertTrue(isinstance(test_room, Room))
+        self.assertEqual("1.21", test_room.name)
+        self.assertEqual(1, len(test_room.event_objects))
+
+        # check event
+        test_event = test_room.event_objects[0]
+        self.assertTrue(isinstance(test_event, Event))
+        self.assertEqual(1, test_event.id)
+        self.assertEqual("Retro games, arcade and music night", test_event.title)
+        self.assertEqual(
+            "We'll set up some old consoles, arcades and have fun!",
+            test_event.description
+        )
+        self.assertEqual("09:00:00", test_event.duration)
+        self.assertTrue(isinstance(test_event.date, datetime))
+        self.assertEqual("2018-04-13", test_event.date.strftime("%Y-%m-%d"))
+        self.assertEqual("18:00:00", test_event.start)
+
+        # check second day
+        secondday = conference.day_objects[1]
+        self.assertTrue(isinstance(secondday.date, datetime))
+        self.assertEqual("2018-04-14", secondday.date.strftime("%Y-%m-%d"))
+        self.assertEqual(2, len(secondday.room_objects))
+
+        # check room 1 on second day
+        test_room = secondday.room_objects[0]
+        self.assertTrue(isinstance(test_room, Room))
+        self.assertEqual("hackerspace.gent", test_room.name)
+        self.assertEqual(1, len(test_room.event_objects))
+
+        # check event
+        test_event = test_room.event_objects[0]
+        self.assertTrue(isinstance(test_event, Event))
+        self.assertEqual(2, test_event.id)
+        self.assertEqual("Welcome!", test_event.title)
+        self.assertEqual(
+            "An introduction to the Hackerspace and Newline!",
+            test_event.description
+        )
+        self.assertEqual("01:00:00", test_event.duration)
+        self.assertTrue(isinstance(test_event.date, datetime))
+        self.assertEqual("2018-04-14", test_event.date.strftime("%Y-%m-%d"))
+        self.assertEqual("13:00:00", test_event.start)
+
+        # check room 2 on second day
+        test_room = secondday.room_objects[1]
+        self.assertTrue(isinstance(test_room, Room))
+        self.assertEqual("1.21", test_room.name)
+        self.assertEqual(1, len(test_room.event_objects))
+
+        # check event
+        test_event = test_room.event_objects[0]
+        self.assertTrue(isinstance(test_event, Event))
+        self.assertEqual(3, test_event.id)
+        self.assertEqual("Welcome 2!", test_event.title)
+        self.assertEqual(
+            "Talk in another room",
+            test_event.description
+        )
+        self.assertEqual("01:00:00", test_event.duration)
+        self.assertTrue(isinstance(test_event.date, datetime))
+        self.assertEqual("2018-04-14", test_event.date.strftime("%Y-%m-%d"))
+        self.assertEqual("13:00:00", test_event.start)
+
+        # check third day
+        thirdday = conference.day_objects[2]
+        self.assertTrue(isinstance(thirdday.date, datetime))
+        self.assertEqual("2018-04-15", thirdday.date.strftime("%Y-%m-%d"))
+        self.assertEqual(0, len(thirdday.room_objects))
 
 if __name__ == '__main__':
     unittest.main()

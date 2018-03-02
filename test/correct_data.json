@@ -30,6 +30,17 @@
       },
       {
         "id": 3,
+        "name": "Welcome 2!",
+        "description": "Talk in another room",
+        "start": 1523703600,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["1.21"],
+        "scheduled": "final",
+        "speakers": []
+      },
+      {
+        "id": 4,
         "name": "Lightning Talks",
         "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
         "start": 1523656800,
