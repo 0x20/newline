@@ -43,23 +43,83 @@ class TestScheduleParser(unittest.TestCase):
 
     def test_read_json_invalid(self):
         """Test read_json function with invalid input """
-        # function takes a filename (string) as argument
+        # function takes two filenams (string) as argument
         self.assertRaises(TypeError, read_json)
-        self.assertRaises(TypeError, read_json, 123)
-        self.assertRaises(TypeError, read_json, {"test_dict"})
-        self.assertRaises(TypeError, read_json, None)
+        self.assertRaises(TypeError, read_json, "test")
+        self.assertRaises(TypeError, read_json, 123, "test")
+        self.assertRaises(TypeError, read_json, {"test_dict"}, "test")
+        self.assertRaises(TypeError, read_json, None, "test")
+        self.assertRaises(TypeError, read_json, "test", 123)
+        self.assertRaises(TypeError, read_json, "test", {"test_dict"})
+        self.assertRaises(TypeError, read_json, "test", None)
 
         # function should fail when json file doesn't exist
-        self.assertRaises(IOError, read_json, "/path/to/nofile.json")
+        self.assertRaises(
+            IOError,
+            read_json,
+            "/path/to/nofile.json",
+            "test/valid_schema.json"
+        )
+        self.assertRaises(
+            IOError,
+            read_json,
+            "test/valid_data.json",
+            "/path/to/nofile.json"
+        )
 
         # function should fail when file is not valid json
-        self.assertRaises(ValueError, read_json, "test/invalid.txt")
-        self.assertRaises(ValueError, read_json, "test/invalid.json")
+        self.assertRaises(
+            ValueError,
+            read_json,
+            "test/invalid.txt",
+            "test/valid_schema.json"
+        )
+        self.assertRaises(
+            ValueError,
+            read_json,
+            "test/invalid.json",
+            "test/valid_schema.json"
+        )
+        self.assertRaises(
+            ValueError,
+            read_json,
+            "test/valid_data.json",
+            "test/invalid.txt"
+        )
+        self.assertRaises(
+            ValueError,
+            read_json,
+            "test/valid_data.json",
+            "test/invalid.json"
+        )
+
+    def test_read_json_missing_parameters(self):
+        """Test read_json function with missing parameters in json file  """
+        self.assertRaises(
+            ValidationError,
+            read_json,
+            "test/invalid_data_missing_parameters.json",
+            "test/valid_schema.json"
+        )
+
+    def test_read_json_invalid_parameters(self):
+        """Test read_json function with invalid parameter values in json file  """
+        self.assertRaises(
+            ValidationError,
+            read_json,
+            "test/invalid_data_invalid_parameters.json",
+            "test/valid_schema.json"
+        )
 
     def test_read_json_valid(self):
         """Test read_json function with valid input """
         # function returns a Conference instance if json is valid
-        conference = read_json("test/correct_data.json")
+        conference = read_json("test/valid_data.json", "test/valid_schema.json")
+
+    def test_read_json_valid(self):
+        """Test read_json function with valid input """
+        # function returns a Conference instance if json is valid
+        conference = read_json("test/valid_data.json", "test/valid_schema.json")
         self.assertTrue(isinstance(conference, Conference))
 
         # checks conference parameters

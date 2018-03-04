@@ -1,0 +1,21 @@
+{
+    "event_name": 123,
+    "event_venue": 11234,
+    "event_url": "just a string, should be a uri",
+    "event_city": 2345,
+    "event_start": -1523570400,
+    "event_end": -1523829599,
+    "event_schedule": [
+      {
+        "id": 1,
+        "name": "Retro games, arcade and music night",
+        "description": "We'll set up some old consoles, arcades and have fun!",
+        "start": 1523635200,
+        "duration": 32400,
+        "type": "general_typo",
+        "rooms": "1.21",
+        "scheduled": "invalid",
+        "speakers": ["speaker 1", "speaker 2"]
+      }
+    ]
+  }
