@@ -89,11 +89,12 @@ class TestScheduleParser(unittest.TestCase):
         self.assertEqual("1.21", test_room.name)
         self.assertEqual(1, len(test_room.event_objects))
 
-        # check event
+        # check event 1
         test_event = test_room.event_objects[0]
         self.assertTrue(isinstance(test_event, Event))
         self.assertEqual(1, test_event.id)
         self.assertEqual("Retro games, arcade and music night", test_event.title)
+        self.assertEqual("general", test_event.type)
         self.assertEqual(
             "We'll set up some old consoles, arcades and have fun!",
             test_event.description
@@ -102,12 +103,23 @@ class TestScheduleParser(unittest.TestCase):
         self.assertTrue(isinstance(test_event.date, datetime))
         self.assertEqual("2018-04-13", test_event.date.strftime("%Y-%m-%d"))
         self.assertEqual("18:00:00", test_event.start)
+        self.assertEqual(2, len(test_event.person_objects))
+
+        # check first speaker
+        test_speaker = test_event.person_objects[0]
+        self.assertTrue(isinstance(test_speaker, Person))
+        self.assertEqual("speaker 1", test_speaker.name)
+
+        # check second speaker
+        test_speaker = test_event.person_objects[1]
+        self.assertTrue(isinstance(test_speaker, Person))
+        self.assertEqual("speaker 2", test_speaker.name)
 
         # check second day
         secondday = conference.day_objects[1]
         self.assertTrue(isinstance(secondday.date, datetime))
         self.assertEqual("2018-04-14", secondday.date.strftime("%Y-%m-%d"))
-        self.assertEqual(2, len(secondday.room_objects))
+        self.assertEqual(3, len(secondday.room_objects))
 
         # check room 1 on second day
         test_room = secondday.room_objects[0]
@@ -115,11 +127,12 @@ class TestScheduleParser(unittest.TestCase):
         self.assertEqual("hackerspace.gent", test_room.name)
         self.assertEqual(1, len(test_room.event_objects))
 
-        # check event
+        # check event 2
         test_event = test_room.event_objects[0]
         self.assertTrue(isinstance(test_event, Event))
         self.assertEqual(2, test_event.id)
         self.assertEqual("Welcome!", test_event.title)
+        self.assertEqual("talk", test_event.type)
         self.assertEqual(
             "An introduction to the Hackerspace and Newline!",
             test_event.description
@@ -128,6 +141,12 @@ class TestScheduleParser(unittest.TestCase):
         self.assertTrue(isinstance(test_event.date, datetime))
         self.assertEqual("2018-04-14", test_event.date.strftime("%Y-%m-%d"))
         self.assertEqual("13:00:00", test_event.start)
+        self.assertEqual(1, len(test_event.person_objects))
+
+        # check first speaker
+        test_speaker = test_event.person_objects[0]
+        self.assertTrue(isinstance(test_speaker, Person))
+        self.assertEqual("speaker 3", test_speaker.name)
 
         # check room 2 on second day
         test_room = secondday.room_objects[1]
@@ -135,19 +154,43 @@ class TestScheduleParser(unittest.TestCase):
         self.assertEqual("1.21", test_room.name)
         self.assertEqual(1, len(test_room.event_objects))
 
-        # check event
+        # check event 3
         test_event = test_room.event_objects[0]
         self.assertTrue(isinstance(test_event, Event))
         self.assertEqual(3, test_event.id)
-        self.assertEqual("Welcome 2!", test_event.title)
+        self.assertEqual("Welcome 2 workshops!", test_event.title)
+        self.assertEqual("workshop", test_event.type)
         self.assertEqual(
-            "Talk in another room",
+            "Workshops in 2 other rooms",
             test_event.description
         )
         self.assertEqual("01:00:00", test_event.duration)
         self.assertTrue(isinstance(test_event.date, datetime))
         self.assertEqual("2018-04-14", test_event.date.strftime("%Y-%m-%d"))
         self.assertEqual("13:00:00", test_event.start)
+        self.assertEqual(0, len(test_event.person_objects))
+
+        # check room 3 on second day
+        test_room = secondday.room_objects[2]
+        self.assertTrue(isinstance(test_room, Room))
+        self.assertEqual("1.22", test_room.name)
+        self.assertEqual(1, len(test_room.event_objects))
+
+        # check event 3
+        test_event = test_room.event_objects[0]
+        self.assertTrue(isinstance(test_event, Event))
+        self.assertEqual(3, test_event.id)
+        self.assertEqual("Welcome 2 workshops!", test_event.title)
+        self.assertEqual("workshop", test_event.type)
+        self.assertEqual(
+            "Workshops in 2 other rooms",
+            test_event.description
+        )
+        self.assertEqual("01:00:00", test_event.duration)
+        self.assertTrue(isinstance(test_event.date, datetime))
+        self.assertEqual("2018-04-14", test_event.date.strftime("%Y-%m-%d"))
+        self.assertEqual("13:00:00", test_event.start)
+        self.assertEqual(0, len(test_event.person_objects))
 
         # check third day
         thirdday = conference.day_objects[2]
