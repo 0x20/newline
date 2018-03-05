@@ -31,6 +31,7 @@ IN THE SOFTWARE.
 from os.path import isfile
 from datetime import datetime, timedelta
 import time
+import pytz
 import json
 from jsonschema import validate, ValidationError
 from pentabarf.Conference import Conference
@@ -96,12 +97,16 @@ def read_json(json_input_file, json_schema_file):
                 )
             validate(newline_data, schema)
 
+        timezone = pytz.timezone("Europe/Brussels")
+
         # read conference data from json file
         start_day = datetime.fromtimestamp(
-            float(newline_data.get('event_start'))
+            float(newline_data.get('event_start')),
+            timezone
         )
         end_day = datetime.fromtimestamp(
-            float(newline_data.get('event_end'))
+            float(newline_data.get('event_end')),
+            timezone
         )
         conference_days = 1 + int(
             (abs(end_day - start_day)).total_seconds() / (3600 * 24)
@@ -128,7 +133,10 @@ def read_json(json_input_file, json_schema_file):
             if not event.get('scheduled') == 'final':
                 continue
 
-            tmp_event_date = datetime.fromtimestamp(float(event.get('start')))
+            tmp_event_date = datetime.fromtimestamp(
+                float(event.get('start')),
+                timezone
+            )
             tmp_duration = time.strftime(
                 "%H:%M:%S",
                 time.gmtime(event.get('duration'))
