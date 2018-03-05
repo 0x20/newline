@@ -15,7 +15,7 @@
         "type": "general",
         "rooms": ["1.21"],
         "scheduled": "final",
-        "speakers": []
+        "speakers": ["speaker 1", "speaker 2"]
       },
       {
         "id": 2,
@@ -26,10 +26,21 @@
         "type": "talk",
         "rooms": [],
         "scheduled": "final",
-        "speakers": []
+        "speakers": ["speaker 3"]
       },
       {
         "id": 3,
+        "name": "Welcome 2 workshops!",
+        "description": "Workshops in 2 other rooms",
+        "start": 1523703600,
+        "duration": 3600,
+        "type": "workshop",
+        "rooms": ["1.21", "1.22"],
+        "scheduled": "final",
+        "speakers": []
+      },
+      {
+        "id": 4,
         "name": "Lightning Talks",
         "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
         "start": 1523656800,
@@ -38,6 +49,16 @@
         "rooms": [],
         "scheduled": "day",
         "speakers": []
+      },
+      {
+        "id": 5,
+        "name": "Another talk",
+        "description": "Another unscheduled talk",
+        "start": 1523656800,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": [],
+        "scheduled": "unknown"
       }
     ]
   }

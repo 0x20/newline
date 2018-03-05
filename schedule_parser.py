@@ -31,7 +31,9 @@ IN THE SOFTWARE.
 from os.path import isfile
 from datetime import datetime, timedelta
 import time
+from pytz import timezone
 import json
+from jsonschema import validate, ValidationError
 from pentabarf.Conference import Conference
 from pentabarf.Day import Day
 from pentabarf.Room import Room
@@ -44,28 +46,39 @@ def main():
     current_year = datetime.now().strftime("%Y")
 
     json_input_file = '%s/json/data.json' % (current_year)
+    json_schema_file = '%s/json/data_schema.json' % (current_year)
     pentabarf_file = '%s/xml/pentabarf.xml' % (current_year)
 
     try:
-        conference = read_json(json_input_file)
+        conference = read_json(json_input_file, json_schema_file)
     except IOError as exc:
         print('IOError : %s' % str(exc.message))
         exit()
     except ValueError as exc:
         print('ValueError : %s' % str(exc.message))
         exit()
+    except ValidationError as exc:
+        print('ValidationError : %s' % str(exc.message))
+        exit()
 
     generate_pentabarf_xml(conference, pentabarf_file)
 
-def read_json(json_input_file):
+def read_json(json_input_file, json_schema_file):
     """ Read and parse the conference schedule JSON file """
 
+    # check parameter type
     if not isinstance(json_input_file, str):
         raise TypeError("parameter json_input_file should be a string/path")
+    if not isinstance(json_schema_file, str):
+        raise TypeError("parameter json_schema_file should be a string/path")
 
+    # check if files exist
     if not isfile(json_input_file):
         raise IOError("Inputfile '%s' does not exist" % json_input_file)
+    if not isfile(json_schema_file):
+        raise IOError("Schema file '%s' does not exist" % json_schema_file)
 
+    # read event data file
     with open(json_input_file) as json_data:
         try:
             newline_data = json.load(json_data)
@@ -74,12 +87,27 @@ def read_json(json_input_file):
                 "Inputfile '%s' contains invalid JSON" % json_input_file
             )
 
+        # validate conference data json file
+        with open(json_schema_file) as json_schema:
+            try:
+                schema = json.load(json_schema)
+            except ValueError:
+                raise ValueError(
+                    "Schema file '%s' contains invalid JSON" % json_schema_file
+                )
+            validate(newline_data, schema)
+
         # read conference data from json file
+        timezone_name = newline_data.get('event_timezone') or "Europe/Brussels"
+        conf_timezone = timezone(timezone_name)
+
         start_day = datetime.fromtimestamp(
-            float(newline_data.get('event_start'))
+            float(newline_data.get('event_start')),
+            conf_timezone
         )
         end_day = datetime.fromtimestamp(
-            float(newline_data.get('event_end'))
+            float(newline_data.get('event_end')),
+            conf_timezone
         )
         conference_days = 1 + int(
             (abs(end_day - start_day)).total_seconds() / (3600 * 24)
@@ -106,7 +134,10 @@ def read_json(json_input_file):
             if not event.get('scheduled') == 'final':
                 continue
 
-            tmp_event_date = datetime.fromtimestamp(float(event.get('start')))
+            tmp_event_date = datetime.fromtimestamp(
+                float(event.get('start')),
+                conf_timezone
+            )
             tmp_duration = time.strftime(
                 "%H:%M:%S",
                 time.gmtime(event.get('duration'))

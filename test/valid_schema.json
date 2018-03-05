@@ -15,9 +15,6 @@
         "event_city": {
             "type": "string"
 	},
-        "event_timezone": {
-	    "type": "string"
-	},
         "event_start": {
 	    "type": "integer",
 	    "minimum": 0
