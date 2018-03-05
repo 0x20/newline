@@ -3,6 +3,7 @@
     "event_venue": "hackerspace.gent",
     "event_url": "https://hackerspace.gent/newline",
     "event_city": "Ghent",
+    "event_timezone": "Europe/Brussels",
     "event_start": 1523570400,
     "event_end": 1523829599,
     "event_schedule": [
