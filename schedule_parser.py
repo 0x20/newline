@@ -201,6 +201,16 @@ def add_event2day(conference, day, event, event_rooms):
 
 def populate_conference_days(conference):
     """ Populate conference with day instances """
+    # check parameter type
+    if not isinstance(conference, Conference):
+        raise TypeError("parameter conference should a Conference instance")
+
+    if not isinstance(conference.days, int):
+        raise TypeError("conference.days should be an integer")
+
+    if not isinstance(conference.start, datetime):
+        raise TypeError("conference.start should be a datetime instance")
+
     for i in range(0, conference.days):
         tmp_date = conference.start + timedelta(days=i)
         tmp_date_string = tmp_date.strftime("%Y-%m-%d")

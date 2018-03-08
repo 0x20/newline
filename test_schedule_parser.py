@@ -258,5 +258,82 @@ class TestScheduleParser(unittest.TestCase):
         self.assertEqual("2018-04-15", thirdday.date.strftime("%Y-%m-%d"))
         self.assertEqual(0, len(thirdday.room_objects))
 
+    def test_populate_conference_days_invalid_parameters(self):
+        """ Test populate_conference_days """
+        self.assertRaises(TypeError, populate_conference_days)
+        self.assertRaises(TypeError, populate_conference_days, "string")
+        self.assertRaises(TypeError, populate_conference_days, 123)
+        self.assertRaises(TypeError, populate_conference_days, {})
+
+        conference = Conference()
+        self.assertRaises(TypeError, populate_conference_days, conference)
+
+        conference = Conference(
+            start=datetime(2018, 3, 4)
+        )
+        self.assertRaises(TypeError, populate_conference_days, conference)
+
+    def test_populate_conference_days_0day(self):
+        """ Test populate_conference_days """
+        conference = Conference(
+            start=datetime(2018, 3, 4),
+            end=datetime(2018, 3, 4),
+            days=0
+        )
+
+        self.assertEqual(0, len(conference.day_objects))
+        populate_conference_days(conference)
+        self.assertEqual(0, len(conference.day_objects))
+
+    def test_populate_conference_days_1day(self):
+        """ Test populate_conference_days """
+        conference = Conference(
+            start=datetime(2018, 3, 4),
+            end=datetime(2018, 3, 4),
+            days=1
+        )
+
+        self.assertEqual(0, len(conference.day_objects))
+        populate_conference_days(conference)
+        self.assertEqual(1, len(conference.day_objects))
+
+        # check first day
+        test_day = conference.day_objects[0]
+        self.assertTrue(isinstance(test_day.date, datetime))
+        self.assertEqual("2018-03-04", test_day.date.strftime("%Y-%m-%d"))
+
+
+    def test_populate_conference_days_4days(self):
+        """ Test populate_conference_days """
+        conference = Conference(
+            start=datetime(2018, 3, 4),
+            end=datetime(2018, 3, 7),
+            days=4
+        )
+
+        self.assertEqual(0, len(conference.day_objects))
+        populate_conference_days(conference)
+        self.assertEqual(4, len(conference.day_objects))
+
+        # check first day
+        test_day = conference.day_objects[0]
+        self.assertTrue(isinstance(test_day.date, datetime))
+        self.assertEqual("2018-03-04", test_day.date.strftime("%Y-%m-%d"))
+
+        # check second day
+        test_day = conference.day_objects[1]
+        self.assertTrue(isinstance(test_day.date, datetime))
+        self.assertEqual("2018-03-05", test_day.date.strftime("%Y-%m-%d"))
+
+        # check third day
+        test_day = conference.day_objects[2]
+        self.assertTrue(isinstance(test_day.date, datetime))
+        self.assertEqual("2018-03-06", test_day.date.strftime("%Y-%m-%d"))
+
+        # check fourth day
+        test_day = conference.day_objects[3]
+        self.assertTrue(isinstance(test_day.date, datetime))
+        self.assertEqual("2018-03-07", test_day.date.strftime("%Y-%m-%d"))
+
 if __name__ == '__main__':
     unittest.main()
