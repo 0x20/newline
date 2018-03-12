@@ -25,7 +25,7 @@
         "start": 1523703600,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "final",
         "speakers": []
       },
@@ -36,29 +36,18 @@
         "start": 1523656800,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
-        "scheduled": "day",
-        "speakers": []
-      },
-      {
-        "id": 4,
-        "name": "How to run analytics, move data, or push a result to the web using a (REST) API",
-        "description": "More and more tools are not monolithic pieces of software anymore, but are a collection of small components who speak with each other. Building such a platform where your web interface needs to speak to both your database and to analytics scripts, which you want to run live with your own input requires are a specific piece of software in the middle: an API. I will explain what an API actually is, what it can do, how to use it in a secure way.",
-        "start": 1523656800,
-        "duration": 3600,
-        "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "day",
         "speakers": []
       },
       {
         "id": 5,
-        "name": "Mitch Altman",
-        "description": "Topic of the talk to be announced soon!",
+        "name": "Mitch Altman: Hackerspace Design Patterns",
+        "description": "The famous Mitch Altman, inventor of TV-B-Gone, member of Noisebridge in San Francisco, well known person and expert in the hacker community will talk about Hackerspace Design Patterns. What is a hackerspace? What makes it different from a makerspace or a fablab? He will share his experience of hackerspace communities with us. This talk can lead into a discussion, where we can all talk about what works well and not so well for our hackerspaces so we can all learn from each other, and so people from yet-to-be hackerspaces can get off to a better start.",
         "start": 1523743200,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "day",
         "speakers": ["Mitch Altman"]
       },
@@ -69,9 +58,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Tom"]
       },
       {
         "id": 7,
@@ -80,9 +69,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Anthony"]
       },
       {
         "id": 8,
@@ -91,9 +80,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Cedric"]
       },
       {
         "id": 9,
@@ -102,20 +91,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
-      },
-      {
-        "id": 10,
-        "name": "Scheduling (big) data pipelines",
-        "description": "Back-end projects are often split in multiple split tasks. Most tools include their own scheduler. But if you want to combine your ETL flow with your spark jobs with specific python or R scripts, a more specialized scheduler will be needed. In this session I will explain multiple scheduling concepts (DAG, triggers, Branching, parameters and ‘batching’) with Airflow, AirBNB’s own scheduling solutions.",
-        "start": 0,
-        "duration": 3600,
-        "type": "talk",
-        "rooms": [],
-        "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Bert"]
       },
       {
         "id": 11,
@@ -124,9 +102,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Winnie"]
       },
       {
         "id": 12,
@@ -135,9 +113,9 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Jo"]
       },
       {
         "id": 13,
@@ -146,7 +124,7 @@
         "start": 0,
         "duration": 3600,
         "type": "talk",
-        "rooms": [],
+        "rooms": ["talk room"],
         "scheduled": "unknown",
         "speakers": []
       },
@@ -159,7 +137,7 @@
         "type": "workshop",
         "rooms": [],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Winnie"]
       },
       {
         "id": 15,
@@ -170,7 +148,7 @@
         "type": "workshop",
         "rooms": [],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Algoldor"]
       },
       {
         "id": 16,
@@ -181,29 +159,161 @@
         "type": "workshop",
         "rooms": [],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Sasja"]
       },
       {
         "id": 17,
         "name": "Lockpicking",
-        "description": "The workshop starts off with a short introduction of picking a lock. After this we do the lockpicking itself. We have locks and lockpicks everybody can use!",
+        "description": "Locked yourself out? Lost your key? This workshop will start after the talks about the anatomy of a cylinder lock. We'll go over the basics and then practice the lock picking together! We have locks and lockpicks everybody can use!",
         "start": 0,
         "duration": 3600,
         "type": "workshop",
         "rooms": [],
         "scheduled": "unknown",
-        "speakers": []
+        "speakers": ["Folkaholic"]
       },
       {
         "id": 18,
-        "name": "Soldering with Mitch Altman",
-        "description": "Learn to Solder! You can easily learn all of the skills you need in a short time. Make a project, and take it home with you! We'll have kits to make cool, practical, intriguing, hackable things that you can bring home after you make it. Of course, you can also bring your own projects to hack.",
+        "name": "Soldering for beginners and pro's",
+        "description": "New to soldering or starting out and looking for some advice? Experienced but feeling like some practice? Everyone's welcome in this workshop where Mitch will go over the basics quickly, giving everybody a chance to build a kit or maybe have a go at some prototyping or surface mount techniques. No knowledge required. All materials are provided and free. Come make some cool little projects!",
         "start": 0,
         "duration": 3600,
         "type": "workshop",
         "rooms": [],
         "scheduled": "unknown",
         "speakers": ["Mitch Altman"]
+      },
+      {
+        "id": 19,
+        "name": "Introduction to web audio",
+        "description": "In this talk I will introduce the relatively recent capabilities of browsers for audio processing. More to the point I will introduce parts of the Web Audio API, Web MIDI API and the HTML5 canvas element.\nAs an example application a baby monitor web application will be dissected. To get most out of this talk some elementary knowledge on HTML, CSS and javascript helps. Bring your laptop to run or modify the demos yourself!\nThe aim of this talk is to introduce web audio capabilities and by demonstrating some applications perhaps provide inspiration for your own projects.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": []
+      },
+      {
+        "id": 20,
+        "name": "Ask Merlijn anything about Ubuntu and Open Source",
+        "description": "Merlijn knows a bunch about Ubuntu and Open Source. Ask him anything you're curious about..\nExample questions\n\n- What is Open Source?\n- What is Ubuntu?\n- How do the Ubuntu developers get paid?\n- What is Copyleft?\n- What are Snaps, Flatpaks and AppImages?\n- Why is open source so successful?\n- Why isn't open source more successful?\n- Will this be the year of the Linux desktop?",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Merlijn"]
+      },
+      {
+        "id": 21,
+        "name": "Getting started with Snapcraft: Package, distribute, and update any app for Linux and IoT.",
+        "description": "In this talk you'll learn the basics of Snapcraft, and how Snapcraft can help you to make your application cross-distro on Linux.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Philip"]
+      },
+      {
+        "id": 22,
+        "name": "Building an IoT device (for commercial use)",
+        "description": "In this talk you'll get an insight on how a commercial IoT device is set up, both on the hardware and software side.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Philip"]
+      },
+      {
+        "id": 23,
+        "name": "Amateur radio",
+        "description": "If you have ever played around with the RTL SDR-dongle to visibly look at radio-signals, listened to shortwave broadcasting station or have a HackRF to play around with radio-protocols, you have probably come across the term 'amateur radio' AKA 'ham radio'.\nThe goal of this talk is to explain what exactly is amateur radio hobby, the amateur-radio culture and how having an amateur radio license can help you with your other hobbies, explore radio in all its facets and simply learn more about technology and science in general.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Kristoff"]
+      },
+      {
+        "id": 24,
+        "name": "Anatomy of the cylinder lock",
+        "description": "What parts can you expect to find in a cylinder/pin tumbler lock? And what do these parts do? Introduction to locks.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Birger"]
+      },
+      {
+        "id": 25,
+        "name": "Automotive Transponder Keys - introduction",
+        "description": "Every* car since 1995 has a transponder key. Learn more about the technology behind it.",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["Birger"]
+      },
+      {
+        "id": 26,
+        "name": "Chipmusic for everyone!",
+        "description": "How can people make music with old retro stuff? A quick review of chiptune music and how you can get that 8-bit retrosounds from a 30 years old gameboy. Bonus stage: and you might be able to catch a live concert from chiptune artist 3D63 if you come!",
+        "start": 0,
+        "duration": 3600,
+        "type": "talk",
+        "rooms": ["talk room"],
+        "scheduled": "unknown",
+        "speakers": ["3D63"]
+      },
+      {
+        "id": 27,
+        "name": "2nd foodhacking workshop Algoldor: to be announced",
+        "description": "To be announced",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "rooms": [],
+        "scheduled": "unknown",
+        "speakers": ["Algoldor"]
+      },
+      {
+        "id": 28,
+        "name": "Visual Art with Processing",
+        "description": "Let's play with Processing.org, a great tool for doing original, interactive visual art.\nThere will be fun for everyone, whether you have experience with programming or not.\nJust bring a computer, Processing works on Linux, macOS, Windows and Android.\nWe will show you how to get started, then the stage will be yours until the end of the workshop where we will present our creations to each other.",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "rooms": [],
+        "scheduled": "unknown",
+        "speakers": ["OKso"]
+      },
+      {
+        "id": 29,
+        "name": "Workshop sewing",
+        "description": "Always wanted to sew, but never got the chance? Then this beginners workshop is just what you're looking for. While making a stuffed animal, you'll learn the basics of a sewing machine, pattern assembly and finishing. Max 4 participants or max 6 participants if you can bring your own sewing machine. To join this workshop, fill in the poll on the Facebook Event page or send us an e-mail. Our sewing professional is providing all the material and asks €10 so she will not end up in debt.",
+        "start": 0,
+        "duration": 3600,
+        "type": "workshop",
+        "rooms": [],
+        "scheduled": "unknown",
+        "speakers": ["Dorien"]
+      },
+      {
+        "id": 30,
+        "name": "Game boy music performance",
+        "description": "8 bit musician since 2016, Ganondorofu plays psychedelic dance compositions with lsdj on game boy and an electric bass.",
+        "start": 0,
+        "duration": 3600,
+        "type": "general",
+        "rooms": [],
+        "scheduled": "unknown",
+        "speakers": ["Ganondorofu"]
       }
     ]
   }
