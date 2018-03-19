@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b6d966b3f684db185dfaa8112d4f5de)](https://app.codacy.com/app/ruleant/newline?utm_source=github.com&utm_medium=referral&utm_content=0x20/newline&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/0x20/newline.svg?branch=master)](https://travis-ci.org/0x20/newline)
 
 # How this repository works
