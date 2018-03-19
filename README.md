@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/0x20/newline.svg?branch=master)](https://travis-ci.org/0x20/newline)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55aaf8de4794485dbe10859818f8d9fc)](https://www.codacy.com/app/0x20/newline)
 
 # How this repository works
 
