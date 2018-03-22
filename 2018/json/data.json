@@ -296,7 +296,7 @@
       {
         "id": 29,
         "name": "Workshop sewing",
-        "description": "Always wanted to sew, but never got the chance? Then this beginners workshop is just what you're looking for. While making a stuffed animal, you'll learn the basics of a sewing machine, pattern assembly and finishing. Max 4 participants or max 6 participants if you can bring your own sewing machine. To join this workshop, fill in the poll on the Facebook Event page or send us an e-mail. Our sewing professional is providing all the material and asks €10 so she will not end up in debt.",
+        "description": "Always wanted to sew, but never got the chance? Then this beginners workshop is just what you're looking for. While making a stuffed animal, you'll learn the basics of a sewing machine, pattern assembly and finishing. Max 4 participants without sewing machine or max 6 participants if 2 can bring their own sewing machine. To join this workshop, fill in the poll on the Facebook Event page or send an e-mail to: dorienelleboog@hotmail.com. Our sewing professional is providing all the material and asks €15 to pay back the provided materials.",
         "start": 1523797200,
         "duration": 10800,
         "type": "workshop",
@@ -314,6 +314,17 @@
         "rooms": ["back room"],
         "scheduled": "final",
         "speakers": ["Ganondorofu"]
+      },
+      {
+      	"id": 31,
+      	"name": "Keysigning party",
+      	"description": "Keysigning parties are events where people digitally sign each other's digital identities, helping to create trust that the digital identity really belongs to the real person who claims to own it.\nRequirements: No preparation is necessary except for you to bring two government issued identity documents (ID, driver's license, passport). We will guide you through every step from key generation to verifying.\nOrganizer contact info: https://keybase.io/gillesjacobs",
+        "start": 1521048600,
+        "duration": 7200,
+        "type": "workshop",
+        "rooms": ["workshop room 2"],
+        "scheduled": "final",
+        "speakers": ["enzian"]
       }
     ]
   }
