@@ -53,8 +53,8 @@
       },
       {
         "id": 6,
-        "name": "Science is broken - or is it?",
-        "description": "In the debate about the state of science, the faction that claims that 'science is broken' is the most vocal one. However, they often oversimplify the discourse on the matter. In this talk, we will outline where the 'sciene is broken' sentiment comes from, why it applies to some degree, but also why it's not all doom and gloom.",
+        "name": "The Zodiac Killer's z340: like a fake cipher",
+        "description": "To this day, the Zodiac Killer's second major cipher, z340, remains unsolved. In this talk, I argue that z340 is most likely a fake cipher. This hypothesis has been put forward before, but without hard evidence. I provide such evidence, which is mainly based on the analysis of mean squared distances for ngrams. This analysis is applied across various ciphers: z340, z408, which is the other major cipher by the Zodiac Killer, twenty generated ciphers based on real texts, and twenty fake ciphers based on random letter sequences. The results show that z340 behaves unlike other true ciphers. Instead, it associates with the fake ciphers.",
         "start": 1523804400,
         "duration": 1800,
         "type": "talk",
