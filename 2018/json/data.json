@@ -317,8 +317,8 @@
       },
       {
       	"id": 31,
-      	"name": "Keysigning party",
-      	"description": "Keysigning parties are events where people digitally sign each other's digital identities, helping to create trust that the digital identity really belongs to the real person who claims to own it.\nRequirements: No preparation is necessary except for you to bring two government issued identity documents (ID, driver's license, passport). We will guide you through every step from key generation to verifying.\nOrganizer contact info: https://keybase.io/gillesjacobs",
+      	"name": "Keysigning party and PGP 101",
+      	"description": "This workshop serves as an introduction to PGP as well as a keysigning party. Keysigning parties are events where people digitally sign each other's digital identities, helping to create trust that the digital identity really belongs to the real person who claims to own it.\nRequirements: No preparation is necessary except for you to bring two government issued identity documents (ID, driver's license, passport). We will guide you through every step from key generation to verifying. Organizer contact info: https://keybase.io/gillesjacobs",
         "start": 1523719800,
         "duration": 7200,
         "type": "workshop",
