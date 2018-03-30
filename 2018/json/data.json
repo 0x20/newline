@@ -9,8 +9,8 @@
     "event_schedule": [
       {
         "id": 1,
-        "name": "Retro games, arcade and music night",
-        "description": "We'll set up some old consoles, arcades and have fun!",
+        "name": "Retro games, arcade, movie and music night",
+        "description": "We'll set up some old consoles, arcades and have fun! There will be a movie room with the weirdest corners of Youtube. 3D63 will give a chip music game boy performance after 8pm and welcomes everyone to jam together. So bring your instrument, game boy, MIDI board etc with you!",
         "start": 1523635200,
         "duration": 32400,
         "type": "general",
