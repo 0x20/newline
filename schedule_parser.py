@@ -187,14 +187,11 @@ def add_event2day(conference, day, event, event_rooms):
 
     for event_room in event_rooms:
         # create room if no rooms are defined yet
-        if not day.room_objects:
+        day_room_names = [r.name for r in day.room_objects]
+        if not event_room in day_room_names:
             day.add_room(Room(event_room))
 
         for day_room in day.room_objects:
-            # add event room if it doesn't exist for the conference day
-            if not day_room.name in event_rooms:
-                day.add_room(Room(event_room))
-
             # add event to room
             if event_room == day_room.name:
                 day_room.add_event(event)
