@@ -316,17 +316,6 @@
         "speakers": ["Ganondorofu"]
       },
       {
-        "id": 31,
-        "name": "A pretty good introduction to PGP and keysigning parties",
-        "description": "Protect your data and identity! An introduction to PGP public key cryptography, keysigning party included. Keysigning parties are events where people digitally sign each other's digital identities, helping to create trust that the digital identity really belongs to the real person who claims to own it.\nRequirements: No preparation is necessary except for you to bring two government issued identity documents (ID, driver's license, passport) and a laptop. We will guide you through every step from key generation to verifying. Organizer contact info: https://keybase.io/gillesjacobs",
-        "start": 1523719800,
-        "duration": 7200,
-        "type": "workshop",
-        "rooms": ["workshop room 2"],
-        "scheduled": "final",
-        "speakers": ["enzian"]
-      },
-      {
         "id": 32,
         "name": "Bitcoin's caching layer: the Lightning Network",
         "description": "During the past year Bitcoin was at times unusable for small purchases, due to its transaction limit being reached. Different scaling solutions have been proposed, but one of the main contenders is the Lightning Network. This is a second layer on top of Bitcoin, retaining many of the security guarantees and allowing a lot more transactions per second. This talk will give a high-level overview of the Lightning Network, try to explain how it works under the hood, and give the current status.",
