@@ -153,7 +153,7 @@
       {
         "id": 16,
         "name": "Introduction to vim",
-        "description": "for all of you that edit text files(i'm not talking about Microsoft Word) for a living. There’s a reason people love this editor. find out why during this hands-on workshop. Bring a laptop. You won't need a mouse, ever.",
+        "description": "For all of you that edit text files(i'm not talking about Microsoft Word) for a living. There’s a reason people love this editor. Find out why during this hands-on workshop. Bring a laptop. You won't need a mouse, ever.",
         "start": 1523709000,
         "duration": 3600,
         "type": "workshop",
