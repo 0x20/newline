@@ -135,9 +135,13 @@ def read_json(json_input_file, json_schema_file):
                 continue
 
             tmp_event_date = datetime.fromtimestamp(
-                float(event.get('start')),
+                float(event.get('start')) - 6*3600, # 6AM day-change
                 conf_timezone
             )
+            tmp_event_starttime = datetime.fromtimestamp(
+                float(event.get('start')),
+                conf_timezone
+            ).strftime("%H:%M:%S")
             tmp_duration = time.strftime(
                 "%H:%M:%S",
                 time.gmtime(event.get('duration'))
@@ -151,7 +155,7 @@ def read_json(json_input_file, json_schema_file):
                 type=event.get('type'),
                 duration=tmp_duration,
                 date=tmp_event_date,
-                start=tmp_event_date.strftime("%H:%M:%S")
+                start=tmp_event_starttime
             )
 
             # add speakers to event
