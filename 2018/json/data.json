@@ -325,6 +325,17 @@
         "rooms": ["talk room"],
         "scheduled": "final",
         "speakers": ["Mike Rosseel"]
+      },
+      {
+        "id": 33,
+        "name": "Capture The Flag",
+        "description": "Learn about cybersecurity and refine your hacking skills by partaking in the CTF challenge that will be ongoing during the weekend.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "general",
+        "scheduled": "final",
+        "speakers": ["Cedric"]
       }
     ]
   }
