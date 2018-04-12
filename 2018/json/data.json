@@ -14,7 +14,7 @@
         "start": 1523635200,
         "duration": 32400,
         "type": "general",
-        "rooms": ["1.21"],
+        "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": []
       },
@@ -25,7 +25,7 @@
         "start": 1523704500,
         "duration": 900,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": []
       },
@@ -36,7 +36,7 @@
         "start": 1523742300,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": []
       },
@@ -47,7 +47,7 @@
         "start": 1523807100,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Mitch Altman"]
       },
@@ -58,7 +58,7 @@
         "start": 1523804400,
         "duration": 1800,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Tom"]
       },
@@ -69,7 +69,7 @@
         "start": 1523706300,
         "duration": 1800,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Anthony"]
       },
@@ -80,7 +80,7 @@
         "start": 1523800800,
         "duration": 2700,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Cedric"]
       },
@@ -91,7 +91,7 @@
         "start": 1523718000,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Bert"]
       },
@@ -102,7 +102,7 @@
         "start": 1523790000,
         "duration": 900,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Winnie"]
       },
@@ -113,7 +113,7 @@
         "start": 1523713500,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Jo"]
       },
@@ -124,7 +124,7 @@
         "start": 1523736000,
         "duration": 5400,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": []
       },
@@ -135,7 +135,7 @@
         "start": 1523791800,
         "duration": 1200,
         "type": "workshop",
-        "rooms": ["workshop room 2"],
+        "rooms": ["the other workshop room"],
         "scheduled": "final",
         "speakers": ["Winnie"]
       },
@@ -146,7 +146,7 @@
         "start": 1523793600,
         "duration": 3600,
         "type": "workshop",
-        "rooms": ["workshop room 2"],
+        "rooms": ["the other workshop room"],
         "scheduled": "final",
         "speakers": ["Algoldor"]
       },
@@ -157,7 +157,7 @@
         "start": 1523709000,
         "duration": 3600,
         "type": "workshop",
-        "rooms": ["workshop room 1"],
+        "rooms": ["place.guru"],
         "scheduled": "final",
         "speakers": ["Sasja"]
       },
@@ -168,7 +168,7 @@
         "start": 1523803500,
         "duration": 3600,
         "type": "workshop",
-        "rooms": ["back room"],
+        "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["Folkaholic"]
       },
@@ -179,7 +179,7 @@
         "start": 1523727000,
         "duration": 7200,
         "type": "workshop",
-        "rooms": ["workshop room 1"],
+        "rooms": ["place.guru"],
         "scheduled": "final",
         "speakers": ["Mitch Altman"]
       },
@@ -190,7 +190,7 @@
         "start": 1523709000,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Joren"]
       },
@@ -201,7 +201,7 @@
         "start": 1523729700,
         "duration": 2700,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Merlijn"]
       },
@@ -212,7 +212,7 @@
         "start": 1523722500,
         "duration": 1800,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Philip"]
       },
@@ -223,7 +223,7 @@
         "start": 1523727000,
         "duration": 1800,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Philip"]
       },
@@ -234,7 +234,7 @@
         "start": 1523796300,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Kristoff"]
       },
@@ -245,7 +245,7 @@
         "start": 1523800800,
         "duration": 2700,
         "type": "talk",
-        "rooms": ["back room"],
+        "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["Birger"]
       },
@@ -256,7 +256,7 @@
         "start": 1523791800,
         "duration": 3600,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Birger"]
       },
@@ -267,7 +267,7 @@
         "start": 1523724300,
         "duration": 1800,
         "type": "general",
-        "rooms": ["back room"],
+        "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["3D63"]
       },
@@ -278,7 +278,7 @@
         "start": 1523713500,
         "duration": 5400,
         "type": "workshop",
-        "rooms": ["workshop room 2"],
+        "rooms": ["the other workshop room"],
         "scheduled": "final",
         "speakers": ["Algoldor"]
       },
@@ -289,7 +289,7 @@
         "start": 1523713500,
         "duration": 7200,
         "type": "workshop",
-        "rooms": ["workshop room 1"],
+        "rooms": ["place.guru"],
         "scheduled": "final",
         "speakers": ["OKso"]
       },
@@ -300,7 +300,7 @@
         "start": 1523797200,
         "duration": 10800,
         "type": "workshop",
-        "rooms": ["workshop room 3"],
+        "rooms": ["place.guru"],
         "scheduled": "final",
         "speakers": ["Dorien"]
       },
@@ -311,7 +311,7 @@
         "start": 1523742300,
         "duration": 1800,
         "type": "general",
-        "rooms": ["back room"],
+        "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["Ganondorofu"]
       },
@@ -322,7 +322,7 @@
         "start": 1523733300,
         "duration": 1800,
         "type": "talk",
-        "rooms": ["talk room"],
+        "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Mike Rosseel"]
       },
