@@ -135,7 +135,7 @@
         "start": 1523791800,
         "duration": 1200,
         "type": "workshop",
-        "rooms": ["the other workshop room"],
+        "rooms": ["the bio room"],
         "scheduled": "final",
         "speakers": ["Winnie"]
       },
@@ -146,7 +146,7 @@
         "start": 1523793600,
         "duration": 3600,
         "type": "workshop",
-        "rooms": ["the other workshop room"],
+        "rooms": ["the bio room"],
         "scheduled": "final",
         "speakers": ["Algoldor"]
       },
@@ -278,7 +278,7 @@
         "start": 1523713500,
         "duration": 5400,
         "type": "workshop",
-        "rooms": ["the other workshop room"],
+        "rooms": ["the bio room"],
         "scheduled": "final",
         "speakers": ["Algoldor"]
       },
