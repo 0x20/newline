@@ -104,7 +104,7 @@
         "type": "talk",
         "rooms": ["talks room"],
         "scheduled": "final",
-        "speakers": ["Winnie"]
+        "speakers": ["Winnie Poncelet"]
       },
       {
         "id": 12,
@@ -137,7 +137,7 @@
         "type": "workshop",
         "rooms": ["place.guru"],
         "scheduled": "final",
-        "speakers": ["Winnie"]
+        "speakers": ["Winnie Poncelet"]
       },
       {
         "id": 15,
