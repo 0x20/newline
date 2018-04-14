@@ -33,7 +33,7 @@
         "id": 3,
         "name": "Lightning Talks",
         "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
-        "start": 1523742300,
+        "start": 1523744100,
         "duration": 3600,
         "type": "talk",
         "rooms": ["talks room"],
