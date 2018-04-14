@@ -179,7 +179,7 @@
         "start": 1523727000,
         "duration": 7200,
         "type": "workshop",
-        "rooms": ["workshop room 1"],
+        "rooms": ["workshop room 2"],
         "scheduled": "final",
         "speakers": ["Mitch Altman"]
       },
