@@ -32,7 +32,7 @@
       {
         "id": 3,
         "name": "Lightning Talks",
-        "description": "Anyone has the chance to present a 5 or 10 minute talk. \nJust show up if you have something interesting/entertaining.",
+        "description": "Anyone has the chance to present a 5 or 10 minute talk.<br />-How to fall asleep in two minutes (Bertrand)<br />-Urban exploration (Tatjana)<br />-Data privacy: educating our fellow non-tech friends / community (Kashyap)<br />-Do not trust morrocan police (Ewaut)<br />-Discovering variable stars (Mike)<br />-FakeUSB Storage, all flash no substance? F3 (Elvis)\nJust show up if you have something interesting/entertaining.",
         "start": 1523744100,
         "duration": 3600,
         "type": "talk",
