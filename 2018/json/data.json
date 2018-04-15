@@ -319,7 +319,7 @@
        "id": 11,
        "name": "Biohacking",
        "description": "DIY genetic manipulation (CRISPR) using The-ODIN.",
-       "start":1523792700,
+       "start":1523790900,
        "duration": 1800,
        "type": "talk",
        "rooms": ["talks room"],
