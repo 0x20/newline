@@ -96,17 +96,6 @@
         "speakers": ["Bert"]
       },
       {
-        "id": 11,
-        "name": "Biohacking intro",
-        "description": "Intro to biohacking: what's growing in the world/europe/belgium/ghent? What can YOU do/feed/grow/kill/discover tomorrow?",
-        "start": 1523790000,
-        "duration": 900,
-        "type": "talk",
-        "rooms": ["talks room"],
-        "scheduled": "final",
-        "speakers": ["Winnie Poncelet"]
-      },
-      {
         "id": 12,
         "name": "Hardware-Based Trusted Computing from an Attack/Defense Perspective",
         "description": "Protected module architectures (PMAs) are a new brand of security architectures whose main objective is to support the secure isolated execution of software modules with a minimal Trusted Computing Base (TCB). Several prototypes for embedded systems, and also the Software Guard eXtensions (SGX) included in recent Intel x86 processors, ensure isolation with a hardware-only TCB. This talk, based on my ongoing PhD research, highlights two complementary lines of PMA research. On the one hand, I will introduce the free/open-source Sancus hardware-level PMA and embedded (automotive) security applications we are actively developing. On the other hand, I will overview our recent research efforts on side-channel attacks against off-the-shelf Intel SGX platforms.",
@@ -127,17 +116,6 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": []
-      },
-      {
-        "id": 14,
-        "name": "DIY bio techniques",
-        "description": "Workshop: let us know what you want to learn about: bioplastics, slime mold, genetic barcoding or requests! Let us know on the event Facebook page https://www.facebook.com/events/143174433013216 or send a message to info@hackerspace.gent",
-        "start": 1523791800,
-        "duration": 1200,
-        "type": "workshop",
-        "rooms": ["workshop room 2"],
-        "scheduled": "final",
-        "speakers": ["Winnie Poncelet"]
       },
       {
         "id": 15,
