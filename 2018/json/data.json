@@ -44,7 +44,7 @@
         "id": 5,
         "name": "Mitch Altman: Hackerspace Design Patterns",
         "description": "The famous Mitch Altman, inventor of TV-B-Gone, member of Noisebridge in San Francisco, well known person and expert in the hacker community will talk about Hackerspace Design Patterns. What is a hackerspace? What makes it different from a makerspace or a fablab? He will share his experience of hackerspace communities with us. This talk can lead into a discussion, where we can all talk about what works well and not so well for our hackerspaces so we can all learn from each other, and so people from yet-to-be hackerspaces can get off to a better start.",
-        "start": 1523807100,
+        "start": 1523808900,
         "duration": 3600,
         "type": "talk",
         "rooms": ["talks room"],
@@ -55,7 +55,7 @@
         "id": 6,
         "name": "The Zodiac Killer's z340: like a fake cipher",
         "description": "To this day, the Zodiac Killer's second major cipher, z340, remains unsolved. In this talk, I argue that z340 is most likely a fake cipher. This hypothesis has been put forward before, but without hard evidence. I provide such evidence, which is mainly based on the analysis of mean squared distances for ngrams. This analysis is applied across various ciphers: z340, z408, which is the other major cipher by the Zodiac Killer, twenty generated ciphers based on real texts, and twenty fake ciphers based on random letter sequences. The results show that z340 behaves unlike other true ciphers. Instead, it associates with the fake ciphers.",
-        "start": 1523804400,
+        "start": 1523806200,
         "duration": 1800,
         "type": "talk",
         "rooms": ["talks room"],
@@ -77,7 +77,7 @@
         "id": 8,
         "name": "Software Defined Radio with HackRF One for beginners",
         "description": "A short introduction into software defined radio using the HackRF One from Great Scott Gadgets with Gnu Radio. Will talk a bit about the basic concepts and then hack the garage door!",
-        "start": 1523800800,
+        "start": 1523802600,
         "duration": 2700,
         "type": "talk",
         "rooms": ["talks room"],
@@ -209,7 +209,7 @@
         "id": 23,
         "name": "Amateur radio",
         "description": "If you have ever played around with the RTL SDR-dongle to visibly look at radio-signals, listened to shortwave broadcasting station or have a HackRF to play around with radio-protocols, you have probably come across the term 'amateur radio' AKA 'ham radio'.\nThe goal of this talk is to explain what exactly is amateur radio hobby, the amateur-radio culture and how having an amateur radio license can help you with your other hobbies, explore radio in all its facets and simply learn more about technology and science in general.",
-        "start": 1523796300,
+        "start": 1523798100,
         "duration": 3600,
         "type": "talk",
         "rooms": ["talks room"],
@@ -231,7 +231,7 @@
         "id": 25,
         "name": "Automotive Transponder Keys - introduction",
         "description": "Every* car since 1995 has a transponder key. Learn more about the technology behind it.",
-        "start": 1523791800,
+        "start": 1523793600,
         "duration": 3600,
         "type": "talk",
         "rooms": ["talks room"],
@@ -314,6 +314,17 @@
         "type": "general",
         "scheduled": "final",
         "speakers": ["Cedric"]
+      },
+      {
+       "id": 11,
+       "name": "Biohacking",
+       "description": "DIY genetic manipulation (CRISPR) using The-ODIN.",
+       "start":1523792700,
+       "duration": 1800,
+       "type": "talk",
+       "rooms": ["talks room"],
+       "scheduled": "final",
+       "speakers": ["Miro"]
       }
     ]
   }
