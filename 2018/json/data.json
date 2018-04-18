@@ -39,7 +39,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Bertrand","Tatjana","Kashyap","Ewaut","Mike","Elvis"],
-        "links": ["https://hackerspace.gent/drop/newline0x08_slides/urbex.pdf"]
+        "links": {"Tatjana":"https://hackerspace.gent/drop/newline0x08_slides/urbex.pdf"}
       },
       {
         "id": 5,
@@ -62,7 +62,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["superpumpie"],
-        "links" : ["https://hackerspace.gent/drop/newline0x08_slides/z340_presentation.pdf"]
+        "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/z340_presentation.pdf"}
       },
       {
         "id": 7,
@@ -74,7 +74,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Anthony"],
-        "links" : ["http://fri3d.be/", "https://hackerspace.gent/drop/newline0x08_slides/Fri3d%20Camp%20Newline.pdf"]
+        "links": {"website":"http://fri3d.be/", "slides":"https://hackerspace.gent/drop/newline0x08_slides/Fri3d%20Camp%20Newline.pdf"}
       },
       {
         "id": 8,
@@ -108,7 +108,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Jo"],
-        "links" : ["https://hackerspace.gent/drop/newline0x08_slides/Hardware-Based%20Trusted%20Computing%20Architectures.pdf"]
+        "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/Hardware-Based%20Trusted%20Computing%20Architectures.pdf"}
       },
       {
         "id": 13,
@@ -175,7 +175,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Joren"],
-        "links" : ["https://0110.be/attachment/presentations/2018.04.13-Newline-WebAudio-Ghent/"]
+        "links": {"slides":"https://0110.be/attachment/presentations/2018.04.13-Newline-WebAudio-Ghent/"}
       },
       {
         "id": 20,
@@ -220,7 +220,7 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Kristoff"],
-        "links": ["https://hackerspace.gent/drop/newline0x08_slides/newline2018_hamradio.pdf"]
+        "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/newline2018_hamradio.pdf"}
       },
       {
         "id": 24,
@@ -254,7 +254,7 @@
         "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["3D63"],
-        "links": ["https://3d63.net/"]
+        "links": {"website":"https://3d63.net/"}
       },
       {
         "id": 27,
@@ -299,7 +299,7 @@
         "rooms": ["the hackerspace"],
         "scheduled": "final",
         "speakers": ["Ganondorofu"],
-        "links": ["https://ganondorofu8bit.bandcamp.com/"]
+        "links": {"website":"https://ganondorofu8bit.bandcamp.com/"}
       },
       {
         "id": 32,
@@ -333,7 +333,7 @@
        "rooms": ["talks room"],
        "scheduled": "final",
        "speakers": ["Miro"],
-       "links": ["https://hackerspace.gent/drop/newline0x08_slides/biohacking-introduction.pptx"]
+       "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/biohacking-introduction.pptx"}
       }
     ]
   }
