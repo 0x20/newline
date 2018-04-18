@@ -16,7 +16,8 @@
         "type": "general",
         "rooms": ["the hackerspace"],
         "scheduled": "final",
-        "speakers": []
+        "speakers": [],
+        "links": {"3D63":"https://3d63.net/", "Ganondorofu":"https://ganondorofu8bit.bandcamp.com/"}
       },
       {
         "id": 2,
