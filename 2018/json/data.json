@@ -51,7 +51,8 @@
         "type": "talk",
         "rooms": ["talks room"],
         "scheduled": "final",
-        "speakers": ["Mitch Altman"]
+        "speakers": ["Mitch Altman"],
+        "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/Hackerspace%20Design%20Patterns%202.0%20slides.pdf"}
       },
       {
         "id": 6,
