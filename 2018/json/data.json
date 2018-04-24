@@ -33,14 +33,14 @@
       {
         "id": 3,
         "name": "Lightning Talks",
-        "description": "Anyone has the chance to present a 5 or 10 minute talk.<br />-How to fall asleep in two minutes (Bertrand)<br />-Urban exploration (Tatjana)<br />-Data privacy: educating our fellow non-tech friends / community (Kashyap)<br />-Do not trust morrocan police (Ewaut)<br />-Discovering variable stars (Mike)<br />-FakeUSB Storage, all flash no substance? F3 (Elvis)\nJust show up if you have something interesting/entertaining.",
+        "description": "Anyone has the chance to present a 5 or 10 minute talk.<br />-How to fall asleep in two minutes (Bertrand)<br />-Urban exploration (Tatjana)<br />-Data privacy: educating our fellow non-tech friends / community (Kashyap)<br />-Do not trust morrocan police (Ewaut)<br />-Discovering variable stars (M)<br />-FakeUSB Storage, all flash no substance? F3 (Elvis)\nJust show up if you have something interesting/entertaining.",
         "start": 1523744100,
         "duration": 3600,
         "type": "talk",
         "rooms": ["talks room"],
         "scheduled": "final",
-        "speakers": ["Bertrand","Tatjana","Kashyap","Ewaut","Mike","Elvis"],
-        "links": {"Tatjana":"https://hackerspace.gent/drop/newline0x08_slides/urbex.pdf"}
+        "speakers": ["Bertrand","Tatjana","Kashyap","Ewaut","M","Elvis"],
+        "links": {"Tatjana":"https://hackerspace.gent/drop/newline0x08_slides/urbex.pdf", "M":"https://hackerspace.gent/drop/newline0x08_slides/munipack%20-%20lightning%20talk.pdf"}
       },
       {
         "id": 5,
@@ -312,7 +312,8 @@
         "type": "talk",
         "rooms": ["talks room"],
         "scheduled": "final",
-        "speakers": ["Mike Rosseel"]
+        "speakers": ["M"],
+        "links": {"slides":"https://hackerspace.gent/drop/newline0x08_slides/Lightning%20Network.pdf"}
       },
       {
         "id": 33,
