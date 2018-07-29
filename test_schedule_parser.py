@@ -115,11 +115,6 @@ class TestScheduleParser(unittest.TestCase):
         """Test read_json function with valid input """
         # function returns a Conference instance if json is valid
         conference = read_json("test/valid_data.json", "test/valid_schema.json")
-
-    def test_read_json_valid(self):
-        """Test read_json function with valid input """
-        # function returns a Conference instance if json is valid
-        conference = read_json("test/valid_data.json", "test/valid_schema.json")
         self.assertTrue(isinstance(conference, Conference))
 
         # checks conference parameters
