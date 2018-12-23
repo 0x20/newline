@@ -1,0 +1,90 @@
+{
+    "title": "Conference",
+    "type": "object",
+    "properties": {
+        "event_name": {
+            "type": "string"
+	},
+        "event_venue": {
+            "type": "string"
+	},
+       "event_url": {
+	    "type": "string",
+            "format": "uri"
+        },
+        "event_city": {
+            "type": "string"
+	},
+        "event_timezone": {
+	    "type": "string"
+	},
+        "event_start": {
+	    "type": "integer",
+	    "minimum": 0
+	},
+        "event_end": {
+	    "type": "integer",
+	    "minimum": 0
+	},
+	"event_schedule": {
+            "type": "array",
+	    "items": {
+                "type": "object",
+		"properties" : {
+                    "id": {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "start": {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+	            "duration": {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum" : [ "general", "talk", "workshop" ]
+                    },
+	            "scheduled": {
+                        "type": "string",
+                        "enum" : [ "final", "day", "unknown" ]
+                    },
+                    "rooms": {
+                        "type": "array",
+			"items": {
+                            "type": "string"
+                        }
+                    },
+	            "speakers": {
+                        "type": "array",
+			"items": {
+                            "type": "string"
+                        }
+                    }
+                },
+		"required": [
+                    "id",
+		    "name",
+		    "start",
+		    "duration",
+		    "type",
+		    "scheduled",
+		    "rooms"
+                ]
+	    }
+	}
+    },
+    "required": [
+        "event_name",
+        "event_start",
+        "event_end"
+    ]
+}

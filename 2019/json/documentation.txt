@@ -1,0 +1,17 @@
+Json Array, each sub-event is an object
+
+ID - unique (random) numeric id, tied to the sub-event, NEVER USE THE SAME ONE TWICE/AGAIN
+NAME - name of the sub-event
+DESCRIPTION - self-explanatory
+START - unix time of start of the sub-event. use in combination with "scheduled" 
+DURATION - duration of the event in seconds
+TYPE - one of three possibilities: general, talk, workshop (it is important to keep to these 3, contact bloemist if you want to change this)
+ROOMS - once we have room identifiers, they go here
+SCHEDULED - either "unknown" (timestamp = 0, no date or time), "day" (day of the timestamp, hour unknown) or "final" (timestamp is accurate (ofc you can still update later))
+SPEAKERS - array of speaker name(s)
+
+Dont go changing things without understanding the structure!
+
+The json schedule is validated against a schema (data_schema.json), using Json Schema (see .travis.yml).
+Update the schema file as well if you make changes to the schema.
+More info on Json Schema : http://json-schema.org/

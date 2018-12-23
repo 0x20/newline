@@ -1,0 +1,34 @@
+{
+    "event_name": "Newline 0x09",
+    "event_venue": "hackerspace.gent",
+    "event_url": "https://hackerspace.gent/newline",
+    "event_city": "Ghent",
+    "event_timezone": "Europe/Brussels",
+    "event_start": 1556290800,
+    "event_end": 1556488799,
+    "event_schedule": [
+      {
+        "id": 1,
+        "name": "Retro games, arcade, movie and music night",
+        "description": "We'll set up some old consoles, arcades and have fun! There will be a movie room with the weirdest corners of Youtube. 3D63 will give a chip music game boy performance after 8pm and welcomes everyone to jam together. So bring your instrument, game boy, MIDI board etc with you!",
+        "start": 1556290800,
+        "duration": 25200,
+        "type": "general",
+        "rooms": ["the hackerspace"],
+        "scheduled": "final",
+        "speakers": [],
+        "links": {"3D63":"https://3d63.net/", "Ganondorofu":"https://ganondorofu8bit.bandcamp.com/"}
+      },
+      {
+        "id": 2,
+        "name": "Welcome!",
+        "description": "An introduction to the Hackerspace and Newline!",
+        "start": 1556352000,
+        "duration": 900,
+        "type": "talk",
+        "rooms": ["talks room"],
+        "scheduled": "final",
+        "speakers": ["Merlijn"]
+      }
+    ]
+  }
