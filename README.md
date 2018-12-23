@@ -38,4 +38,4 @@ If you want to commit from the server itself, use this command to specify your n
 git -c user.name='<NAME>' -c user.email='<EMAIL>' commit -m '<TEXT>'
 ```
 
-Thanks to: http://writing.markchristian.org/2011/03/10/how-to-deploy-your-code-from-github-automatically.html
+Thanks to: http://writing.markchristian.org/2011/03/10/how-to-deploy-your-code-from-github-automatically.html 
