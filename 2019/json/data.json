@@ -28,6 +28,149 @@
         "rooms": ["talks room"],
         "scheduled": "final",
         "speakers": ["Merlijn"]
+      },
+      {
+        "id": 3,
+        "name": "Sewing workshop for beginners",
+        "description": "In this workshop we will be make Sasha. The cat has a soft snout, belly and stripes. She has velcro on both sides. If you loose the velcro, the cat becomes a pillow. The tail is inspired by Kiwi's tail. You can make the cat in the color 'Black' or 'Summer'. No sewing experience required!",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["Dorien"]
+      },
+      {
+        "id": 4,
+        "name": "Making a PC 4K intro",
+        "description": "This workshop introduces the basics on rendering graphics using a fragment-shader approach (GLSL), the basics of audio synthesis, and executable compression. The shader part will be coded live, and participants are encouraged to code along as well, using Bonzomatic. (PLEASE INSTALL THIS BEFORE ATTENDING THE WORKSHOP)",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["PoroCYon"]
+      },
+      {
+        "id": 5,
+        "name": "Technologische Soevereiniteit 2 - Het Boek",
+        "description": "This is a dutch 'promo'-talk to introduce the writings of the 'sobtec2'-book into the dutch language domain. Besides a short intro into the theme and the various resulting essays, we'll discuss experiences gathered during the translation process, the printing phase and of publishing an actual book.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["vhill"]
+      },
+      {
+        "id": 6,
+        "name": "Introduction to programming for absolute beginners with Python",
+        "description": "We will cover the very basics to get started with programming and write a few programs together. If you have a laptop, please bring it with you. If you don't, then please let us know and we'll organise one for you.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["superpumpie"]
+      },
+      {
+        "id": 7,
+        "name": "Technologische Soevereiniteit 2 - Het Boek",
+        "description": "Learn about cybersecurity and refine your hacking skills. Connect to the '0x20-ctf' wireless lan and give it your best! Good luck.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "general",
+        "scheduled": "final",
+        "speakers": ["Cedric"]
+      },
+      {
+        "id": 8,
+        "name": "OpenStreetMap: what is it and how do I contribute?",
+        "description": "This talk gives a basic introduction on OpenStreetMap - a bit of history, comparison with other map providers, ... We end with a look into the data model and how you can contribute as well to add your favourite venues.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["pietervdvn"]
+      },
+      {
+        "id": 9,
+        "name": "OpenStreetMap on your phone: OsmAnd",
+        "description": "Get out your (Android) phone, I'll show you around the most useful functions of the OsmAnd-app.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["pietervdvn"]
+      },
+      {
+        "id": 10,
+        "name": "Home Assistant",
+        "description": "Presenting our implementations of home assistant and related home automation stuff",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["Mike","thouters"]
+      },
+      {
+        "id": 11,
+        "name": "Debian packaging for absolute beginners",
+        "description": "An introduction to making Debian packages, starting from just a tarball. We'll go over Debian policy, so that your packages fit into the rest of the system nicely, using debconf to configure your package at install time, and how to maintain your changes to an upstream source package",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["TQ"]
+      },
+      {
+        "id": 12,
+        "name": "Wireless Belgium",
+        "description": "",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["on8wr"]
+      },
+      {
+        "id": 13,
+        "name": "Art of the Algorithms",
+        "description": "Ever witnessed a program doing something you couldn't believe was possible? Amazed by ShaderToy experiments or people misusing hardware bugs in computers from the 80s? Do you want to participate, but don't know where to start? This presentation gives a broad overview of the demoscene, both technically and socially, and gives a few pointers on where to start making demos yourself.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["PoroCYon"]
+      },
+      {
+        "id": 14,
+        "name": "OsmAnd: tweaking the routing engine parameters",
+        "description": "The OsmAnd routing engine takes in an XML-file which describes your preferences. We can change some parameters to have routing which answers your needs more.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["pietervdvn"]
+      },
+      {
+        "id": 15,
+        "name": "Lightning Talks",
+        "description": "",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["You?"]
       }
     ]
   }
