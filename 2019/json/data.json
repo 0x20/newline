@@ -74,17 +74,6 @@
         "speakers": ["superpumpie"]
       },
       {
-        "id": 7,
-        "name": "Technologische Soevereiniteit 2 - Het Boek",
-        "description": "Learn about cybersecurity and refine your hacking skills. Connect to the '0x20-ctf' wireless lan and give it your best! Good luck.",
-        "start": 0,
-        "duration": 0,
-        "rooms": [],
-        "type": "general",
-        "scheduled": "final",
-        "speakers": ["Cedric"]
-      },
-      {
         "id": 8,
         "name": "OpenStreetMap: what is it and how do I contribute?",
         "description": "This talk gives a basic introduction on OpenStreetMap - a bit of history, comparison with other map providers, ... We end with a look into the data model and how you can contribute as well to add your favourite venues.",
