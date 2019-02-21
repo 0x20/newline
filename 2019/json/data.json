@@ -32,7 +32,7 @@
       {
         "id": 3,
         "name": "Sewing workshop for beginners",
-        "description": "In this workshop we will be make Sasha. The cat has a soft snout, belly and stripes. She has velcro on both sides. If you loose the velcro, the cat becomes a pillow. The tail is inspired by Kiwi's tail. You can make the cat in the color 'Black' or 'Summer'. No sewing experience required!",
+        "description": "In this workshop we will be making Sasha. Sasha the cat has a soft snout, belly and stripes. She has velcro on both sides. If you loosen the velcro, the cat becomes a pillow. The tail is inspired by Kiwi's tail. You can make the cat in the color 'Black' or 'Summer'. No sewing experience required!",
         "start": 0,
         "duration": 0,
         "rooms": [],
@@ -43,7 +43,7 @@
       {
         "id": 4,
         "name": "Making a PC 4K intro",
-        "description": "This workshop introduces the basics on rendering graphics using a fragment-shader approach (GLSL), the basics of audio synthesis, and executable compression. The shader part will be coded live, and participants are encouraged to code along as well, using Bonzomatic. (PLEASE INSTALL THIS BEFORE ATTENDING THE WORKSHOP)",
+        "description": "This workshop introduces the basics on rendering graphics using a fragment-shader approach (GLSL), the basics of audio synthesis, and executable compression. The shader part will be coded live, and participants are encouraged to code along as well, using Bonzomatic. (Please install Bonzomatic before the workshop)",
         "start": 0,
         "duration": 0,
         "rooms": [],
@@ -141,19 +141,74 @@
       },
       {
         "id": 14,
-        "name": "OsmAnd: tweaking the routing engine parameters",
-        "description": "The OsmAnd routing engine takes in an XML-file which describes your preferences. We can change some parameters to have routing which answers your needs more.",
+        "name": "Building musical automats",
+        "description": "The Logos Foundation is over 50 years active in combining the fields of music, art and technology. Its founder Godfried-Willem Raes will give a lecture on building musical automats. He'll bring the robot 2pi, a miniature organ, and talk about the development of this automated instrument.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["Godfried-Willem Raes"]
+      },
+      {
+        "id": 16,
+        "name": "Between The Senses: Sound, Colour, and Synaesthesia",
+        "description": "In this lecture Umut Eldem talks about synaesthesia, a rare brain condition that lets people see colours and shapes when they hear sounds and music. Looking at established composers and artists who have used their synaesthesia in their works, we will see how the phenomenon relates to the ways we combine sounds and colours, which electronic tools we can use to recreate it, and how we can make art from it.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["Umut Eldem"]
+      },
+      {
+        "id": 17,
+        "name": "3D63 Live concert",
+        "description": "Music producer for a decade, Andrea La Rosa (a.k.a 3D63) is a big fan of analog aesthetics and sci-fi universes. Composing with 30 years old Nintendo Gameboy, she can make those still dance hard like there's no (not dystopian) future and takes you to a journey into Cyberia, her own artistic universe.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "general",
+        "scheduled": "unknown",
+        "speakers": ["3D63"]
+      },
+      {
+        "id": 18,
+        "name": "Making music with automats",
+        "description": "The Logos Foundation is over 50 years active in combining the fields of music, art and technology. We'll bring the robot <2pi>, a miniature organ. People interested in working with the little organ, can join this workshop. Bring a laptop with your favorite DAW or other MIDI editor and optionally some sensors or other toys!",
         "start": 0,
         "duration": 0,
         "rooms": [],
         "type": "workshop",
         "scheduled": "unknown",
-        "speakers": ["pietervdvn"]
+        "speakers": ["Lara Van Wynsberghe"]
       },
       {
-        "id": 15,
-        "name": "Lightning Talks",
-        "description": "",
+        "id": 19,
+        "name": "Lishi Automotive Lock Picks",
+        "description": "Lishi tools are used by locksmiths to gain entry to a car. There are various different types and models. This lecture tells you how they work and what is available.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "unknown",
+        "speakers": ["Birger"]
+      },
+      {
+        "id": 20,
+        "name": "\"PONG\" arcade game - solder your own!",
+        "description": "Soldering workshop - make your own \"PONG\" clone! We'll assemble a kit based on the ATmega328 microcontroller and a few 3D-printed parts. The ATmega simulates the gameplay, and also generates a PAL video signal that you can view on your TV. At the end of the workshop, you should be able to play your own game on a TV. The kit includes both through-hole components, and SMD components.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["Joris VL"]
+      },
+      {
+        "id": 21,
+        "name": "Lightning Talks (10m max, we'll be ruthless)",
+        "description": "- How chiptune helped me to be more creative (3D63)<br>- Astropolis: space science center in Ostend (Mike)<br>- whoever takes the stage (you?)",
         "start": 0,
         "duration": 0,
         "rooms": [],
