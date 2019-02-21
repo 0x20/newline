@@ -207,6 +207,17 @@
       },
       {
         "id": 21,
+        "name": "DNA extraction workshop",
+        "description": "~Don't let your genes be dreams!~ Using the power of good hard booze, pull the DNA from your very own cheek cells! All materials provided. Except your DNA, of course. That would be pretty weird.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "unknown",
+        "speakers": ["Alex"]
+      },
+      {
+        "id": 22,
         "name": "Lightning Talks & Powerpoint Karaoke",
         "description": "10m max, we'll be ruthless in enforcing the time limit this year.<br>- How chiptune helped me to be more creative (3D63)<br>- Astropolis: space science center in Ostend (Mike)<br>- whoever takes the stage (you?)",
         "start": 0,
