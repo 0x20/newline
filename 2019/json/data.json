@@ -218,6 +218,72 @@
       },
       {
         "id": 22,
+        "name": "How to run an unstructured organization",
+        "description": "When Hackerspace Ghent was on the brink of collapse because of internal conflict, we started the \"hack the hackerspace\" workshops to figure out how to run a hackerspace. Out of these workshops grew the \"Hack the hackerspace manifesto\", an elaborate document describing how to run an organization using do-ocracy.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "",
+        "speakers": ["Merlijn"]
+      },
+      {
+        "id": 23,
+        "name": "Introduction to open source",
+        "description": "Open Source Software is all around us. Smartphones, websites and the internet all run on open source software. Even Microsoft, a long time critic of open source has drastically changed its views and now considers open source software a core part of its business.  But what is open source exactly? What does it mean for something to be open source? Why is it all around us and how does it work? This talk gives an introduction to open source and answers these and many other questions.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "",
+        "speakers": ["Merlijn"]
+      },
+      {
+        "id": 24,
+        "name": "Noise Explorer",
+        "description": "The Noise Protocol Framework, introduced recently, allows for the design and construction of secure channel protocols by describing them through a simple, restricted language from which complex key derivation and local state transitions are automatically inferred. Noise \"Handshake Patterns\" can support mutual authentication, forward secrecy, zero round-trip encryption, identity hiding and other advanced features. Since the framework's release, Noise-based protocols have been adopted by WhatsApp, WireGuard and other high-profile applications.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "",
+        "speakers": ["Nadim Kobeissi"]
+      },
+      {
+        "id": 25,
+        "name": "Ancestry Testing",
+        "description": "In this talk I hope to explain how ancestry testing is performed, what it can tell you, and discuss ethical concerns.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "",
+        "speakers": ["Alex"]
+      },
+      {
+        "id": 26,
+        "name": "A Pictograph is Worth a Thousand Words",
+        "description": "In this lecture, I will present the Picto technology, a set of tools that help improve accessibility to the Internet for people with an intellectual disability (ID). Picto automatically translates Dutch natural language text into pictographs and vice versa, allowing people with limited literacy skills to read and write status updates, emails, and chat messages in online environments.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "talk",
+        "scheduled": "",
+        "speakers": ["Leen Sevens"]
+      },
+      {
+        "id": 27,
+        "name": "KiCad: from schematic to PCB",
+        "description": "An introduction to the KiCad suite of electronic design tools. We go from drawing a (given) schematic to drawing the pcb and generating the files to send to a manufacturer. Requirements: a laptop with KiCad installed (version 5 strongly preferred but 4 will do), a mouse is recommended but not required.",
+        "start": 0,
+        "duration": 0,
+        "rooms": [],
+        "type": "workshop",
+        "scheduled": "",
+        "speakers": ["Evils"]
+      },
+      {
+        "id": 28,
         "name": "Lightning Talks & Powerpoint Karaoke",
         "description": "10m max, we'll be ruthless in enforcing the time limit this year.<br>- How chiptune helped me to be more creative (3D63)<br>- Astropolis: space science center in Ostend (Mike)<br>- whoever takes the stage (you?)",
         "start": 0,
