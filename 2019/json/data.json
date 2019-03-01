@@ -224,7 +224,7 @@
         "duration": 0,
         "rooms": [],
         "type": "talk",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Merlijn"]
       },
       {
@@ -235,7 +235,7 @@
         "duration": 0,
         "rooms": [],
         "type": "talk",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Merlijn"]
       },
       {
@@ -246,7 +246,7 @@
         "duration": 0,
         "rooms": [],
         "type": "talk",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Nadim Kobeissi"]
       },
       {
@@ -257,7 +257,7 @@
         "duration": 0,
         "rooms": [],
         "type": "talk",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Alex"]
       },
       {
@@ -268,7 +268,7 @@
         "duration": 0,
         "rooms": [],
         "type": "talk",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Leen Sevens"]
       },
       {
@@ -279,7 +279,7 @@
         "duration": 0,
         "rooms": [],
         "type": "workshop",
-        "scheduled": "",
+        "scheduled": "unknown",
         "speakers": ["Evils"]
       },
       {
