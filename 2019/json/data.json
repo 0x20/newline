@@ -32,7 +32,7 @@
       {
         "id": 3,
         "name": "Sewing workshop for beginners",
-        "description": "In this workshop we will be making Sasha. Sasha the cat has a soft snout, belly and stripes. She has velcro on both sides. If you loosen the velcro, the cat becomes a pillow. The tail is inspired by Kiwi's tail. You can make the cat in the color 'Black' or 'Summer'. No sewing experience required!",
+        "description": "In this workshop we will be making Sasha. Sasha the cat has a soft snout, belly and stripes. She has velcro on both sides. If you loosen the velcro, the cat becomes a pillow. The tail is inspired by Kiwi's tail. You can make the cat in the color 'Black' or 'Summer'. No sewing experience required! <a href=\"https://ririkiwi.be/index.php?route=product/product&product_id=14816\">(register here)</a>",
         "start": 1556452800,
         "duration": 18000,
         "rooms": [],
@@ -65,7 +65,7 @@
       {
         "id": 6,
         "name": "Introduction to programming for absolute beginners with Python",
-        "description": "We will cover the very basics to get started with programming and write a few programs together. If you have a laptop, please bring it with you. If you don't, then please let us know and we'll organise one for you.",
+        "description": "We will cover the very basics to get started with programming and write a few programs together. If you have a laptop, please bring it with you. If you don't, then please let us know and we'll organise one for you. <a href=\"https://www.meetup.com/HackerspaceGent/events/260078681/\">(register here)</a>",
         "start": 1556390700,
         "duration": 10800,
         "rooms": [],
@@ -197,7 +197,7 @@
       {
         "id": 20,
         "name": "\"PONG\" arcade game - solder your own!",
-        "description": "Soldering workshop - make your own \"PONG\" clone! We'll assemble a kit based on the ATmega328 microcontroller and a few 3D-printed parts. The ATmega simulates the gameplay, and also generates a PAL video signal that you can view on your TV. At the end of the workshop, you should be able to play your own game on a TV. The kit includes both through-hole components, and SMD components.",
+        "description": "Soldering workshop - make your own \"PONG\" clone! We'll assemble a kit based on the ATmega328 microcontroller and a few 3D-printed parts. The ATmega simulates the gameplay, and also generates a PAL video signal that you can view on your TV. At the end of the workshop, you should be able to play your own game on a TV. The kit includes both through-hole components, and SMD components. <a href=\"https://www.meetup.com/HackerspaceGent/events/260109643/\">(register here)</a>",
         "start": 1556377200,
         "duration": 7200,
         "rooms": [],
@@ -208,7 +208,7 @@
       {
         "id": 21,
         "name": "DNA extraction workshop & Genetics 101",
-        "description": "~Don't let your genes be dreams!~ Using the power of good hard booze, pull the DNA from your very own cheek cells! All materials provided. Except your DNA, of course. That would be pretty weird.",
+        "description": "~Don't let your genes be dreams!~ Using the power of good hard booze, pull the DNA from your very own cheek cells! All materials provided. Except your DNA, of course. That would be pretty weird. <a href=\"https://www.meetup.com/HackerspaceGent/events/260396222/\">(register here)</a>",
         "start": 1556379000,
         "duration": 2700,
         "rooms": [],
@@ -296,7 +296,7 @@
       {
         "id": 29,
         "name": "Receiving images from satellites with the RTL-dongle + build your own antenna",
-        "description": "This workshop teaches you all necessary steps to use this device to receive pictures from low-orbit weather-satellites and amateur-radio slow-scan TV transmissions from the ISS.",
+        "description": "This workshop teaches you all necessary steps to use this device to receive pictures from low-orbit weather-satellites and amateur-radio slow-scan TV transmissions from the ISS. <a href=\"https://www.meetup.com/HackerspaceGent/events/260076629/\">(register here)</a>",
         "start": 1556363700,
         "duration": 10800,
         "rooms": [],
