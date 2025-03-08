@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <title>Newline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/STLLoader.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    test
+    <div class="container mt-4">
+        <div class="row" style="margin-bottom: 6em;">
+            <div class="col">
+                <img src="./img/newline-logo.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mb-5 text-center">
+            <h2>NEWLINE</h2>
+            <p>To celebrate <a href="https://hackerspace.gent">hackerspace.gent</a> and the hacker community
+                once a year, we organize the "Newline" hacker conference. A newline character marks the end of a
+                line and moves the cursor to the next one. It's a sign of progress and it gives you a whole new
+                line to be filled. Let's join for some short accessible talks, warm food, cold beer, and Club
+                Mate.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-card">
+                    <h2>Call for Papers is now OPEN!</h2>
+                    <p>
+                        The hacker community is a diverse one. We welcome people from all walks of life, and we promote
+                        mutual respect. Whether you identify as a grape, wear a tail or are a time traveller, feel
+                        welcome! Anything goes. Come talk about your ketchup addiction, show off your ballet moves or
+                        come tell us why you should be the next president of the cheese club.
+                        <br>
+                        <br>
+                        We are an open forum, a listening audience. We love technology but we sure would also love to
+                        learn more about any kind of hobby you might have. If you need space or resources or a room
+                        filled with people, just let us know through the participation form.
+                    </p>
+                    <h6><a href="https://cfp.hackerspace.gent/newline-2025/cfp">Submit your proposal at cfp.hackerspace.gent</a></h6>
+                    <img src="/2025/img/paper outline.png" class="img-fluid mt-5 mb-5"
+                        style="width: 10em; display: block; margin: 0 auto;">
+                </div>
+
+                <div class="text-card">
+                    <h2>Coming soon:</h2>
+                    <ul>
+                        <li>How to reach the hackerspace: Newline will take place in and around the hackerspace of Ghent: Wiedauwkaai 51, 9000 GentF</li>
+                        <li>Accommodation</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="text-card">
+                    <h2>Contact us</h2>
+                    <p>Feel free to contact us at any of these places:</p>
+                    <ul>
+                        <li>Mastodon: <a href="https://chaos.social/@hsg">@hsg@chaos.social</a></li>
+                        <li>Mattermost: <a href="https://chat.hackerspace.gent">chat.hackerspace.gent</a></li>
+                    </ul>
+                    <p>Any additional questions? <a href="mailto:info@hackerspace.gent">Mail us!</a></p>
+                </div>
+
+                <div class="mb-5">
+                    <img src="/2025/img/poster.png" class="img-fluid" style="border-top-left-radius: 75px; border-bottom-right-radius: 70px;">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 600px;">
+            <div class="col">
+                <div class="text-card p-4">
+                    <h2 class="mb-4">The Newline 2025 Schedule</h2>
+                    <p class="mb-4">Here’s a sneak peek at some of the exciting talks and workshops:</p>
+                    <div class="highlight-box mb-4">
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>Meshtastic: Off-grid communication for everyone</h6>
+                            </p>
+                            <p>Discover how this open-source project enables long-range, decentralized communication
+                                without relying on the internet.</p>
+                        </div>
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>MIOTY LPWAN: Who is the champion of Massive IoT applications?</h6>
+                            </p>
+                            <p>Explore MIOTY, an emerging LPWAN technology designed for robust, energy-efficient IoT
+                                communication.</p>
+                        </div>
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>Driving Trains Remotely using Open-Source Software</h6>
+                            </p>
+                            <p>How enthusiasts and professionals are using open-source tools to control model and
+                                real-world railway systems.</p>
+                        </div>
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>Scanning MX Records of European Municipalities – Lessons Learned</h6>
+                            </p>
+                            <p>A deep dive into the email security of European governments and what we discovered from
+                                large-scale MX record scanning.</p>
+                        </div>
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>A Tour of the European Open-Source Online Platforms</h6>
+                            </p>
+                            <p>Explore key open-source platforms driving innovation and collaboration across Europe.</p>
+                        </div>
+                        <div class="talk mb-3">
+                            <p>
+                            <h6>Copy-on-Write (CoW) Filesystems are Awesome!</h6>
+                            </p>
+                            <p>Learn why CoW filesystems like Btrfs and ZFS are changing the way we handle storage and
+                                data integrity.</p>
+                        </div>
+                    </div>
+                    <p>Have something to share? Submit your talk or workshop at our <a
+                            href="https://cfp.hackerspace.gent/newline-2025/cfp">Call for Papers</a>!</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row mt-4" style="height: 1000px;">
+        </div>
+        <div class="row" style="margin-bottom: 6em;">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/skelly on a boaty.png" class="img-fluid" width="200px">
+                <h6>You have been visited by the lucky skeleton!</h6>
+                <h6>Make a wish now</h6>
+                <br>
+                <p>Website made by Mateo, inspired by Bloemist's poster</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script defer src="./scripts/script.js"></script>
+
+
 </body>
+
 </html>

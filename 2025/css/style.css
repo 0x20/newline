@@ -1,0 +1,32 @@
+body {
+    background: #1a1a1a url("https://www.transparenttextures.com/patterns/black-felt.png");
+    --bs-body-font-family: var(--bs-font-monospace);
+    --bs-body-line-height: 1.4;
+}
+
+.text-card {
+    border: 1px solid #EF1C2A;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e74c3c;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+h6 {
+    color: #e74c3c;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    /* This ensures the canvas is behind everything */
+}
