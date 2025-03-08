@@ -1,3 +1,2 @@
 # Temporary redirect /newline to /newline/{YEAR}
-RedirectMatch 302 (?i)^/newline/$ /newline/2019
-
+RedirectMatch 302 (?i)^/newline/$ /newline/2025
